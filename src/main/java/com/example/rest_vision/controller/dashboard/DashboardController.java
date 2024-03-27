@@ -17,7 +17,7 @@ public class DashboardController implements Initializable {
     public void initialize(URL url, ResourceBundle resourceBundle) {
         Parent fxml = null;
         try {
-            fxml = FXMLLoader.load(getClass().getResource("report.fxml"));
+            fxml = FXMLLoader.load(getClass().getResource("/com/example/rest_vision/view/report.fxml"));
             contentArea.getChildren().clear();
             contentArea.getChildren().add(fxml);
         } catch (IOException e) {
@@ -27,41 +27,41 @@ public class DashboardController implements Initializable {
     }
     @FXML
     public void dashboard(ActionEvent event) throws IOException {
-        Parent fxml = FXMLLoader.load(getClass().getResource("report.fxml"));
+        Parent fxml = FXMLLoader.load(getClass().getResource("/com/example/rest_vision/view/report.fxml"));
         contentArea.getChildren().clear();
         contentArea.getChildren().add(fxml);
     }
     @FXML
     public void commande(ActionEvent event) throws IOException{
-        Parent fxml = FXMLLoader.load(getClass().getResource("view/commande/commande.fxml"));
+        Parent fxml = FXMLLoader.load(getClass().getResource("/com/example/rest_vision/view/commande/commande.fxml"));
         contentArea.getChildren().clear();
         contentArea.getChildren().add(fxml);
     }
 
     @FXML
     public void menu(ActionEvent event) throws IOException{
-        Parent fxml = FXMLLoader.load(getClass().getResource("view/menu/menu.fxml"));
+        Parent fxml = FXMLLoader.load(getClass().getResource("/com/example/rest_vision/view/menu/menu.fxml"));
         contentArea.getChildren().clear();
         contentArea.getChildren().add(fxml);
     }
 
     @FXML
     public void personnel(ActionEvent event) throws IOException{
-        Parent fxml = FXMLLoader.load(getClass().getResource("view/personnel/personnel.fxml"));
+        Parent fxml = FXMLLoader.load(getClass().getResource("/com/example/rest_vision/view/personnel/personnel.fxml"));
         contentArea.getChildren().clear();
         contentArea.getChildren().add(fxml);
     }
 
     @FXML
     public void reservation(ActionEvent event) throws IOException{
-        Parent fxml = FXMLLoader.load(getClass().getResource("view/reservation/reservation.fxml"));
+        Parent fxml = FXMLLoader.load(getClass().getResource("/com/example/rest_vision/view/reservation/reservation.fxml"));
         contentArea.getChildren().clear();
         contentArea.getChildren().add(fxml);
     }
 
     @FXML
     public void stock(ActionEvent event) throws IOException{
-        Parent fxml = FXMLLoader.load(getClass().getResource("view/stock/stock.fxml"));
+        Parent fxml = FXMLLoader.load(getClass().getResource("/com/example/rest_vision/view/stock/stock.fxml"));
         contentArea.getChildren().clear();
         contentArea.getChildren().add(fxml);
     }
