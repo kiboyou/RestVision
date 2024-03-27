@@ -1,0 +1,53 @@
+.gradient{
+    -fx-background-color: linear-gradient(to bottom right, #ff9416, #efb262);
+}
+.white-form{
+    -fx-background-color: #fff;
+}
+.head-label{
+    -fx-border-color: #f6a347;
+    -fx-border-width: 0 0 0 3px;
+    -fx-padding: 0 0 0 5px;
+}
+.login-btn{
+    -fx-background-color: linear-gradient(to bottom right, #ff8d00, #efb262);
+    -fx-background-radius: 3px;
+    -fx-cursor: hand;
+    -fx-text-fill: #fff;
+    -fx-font-size: 15px;
+}
+.login-btn:hover{
+    -fx-background-color: linear-gradient(to bottom right, #b79135, rgba(253, 181, 0, 0.93));
+}
+.textfield{
+    -fx-background-color: transparent;
+    -fx-border-color: linear-gradient(to bottom right, #ff9416, #efb262);
+    -fx-border-width: .8px;
+    -fx-border-radius: 3px;
+}
+.textfield:focused{
+    -fx-border-width: 1px;
+
+}
+
+.create-btn{
+    -fx-background-color: transparent;
+    -fx-border-radius: 2px;
+    -fx-border-width: 1px;
+    -fx-cursor: hand;
+    -fx-text-fill: #fff;
+    -fx-border-color: #fff;
+}
+.create-btn:hover{
+    -fx-background-color: WHITE;
+    -fx-text-fill: #333;
+}
+
+.close-btn{
+    -fx-background-color: WHITE;
+    -fx-text-fill: #ddd;
+}
+.close-btn:hover{
+    -fx-background-color: red;
+    -fx-text-fill: #fff;
+}

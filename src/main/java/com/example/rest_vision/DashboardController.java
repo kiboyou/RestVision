@@ -1,14 +1,73 @@
 package com.example.rest_vision;
 
+import javafx.event.ActionEvent;
 import javafx.fxml.FXML;
-import javafx.scene.control.Label;
+import javafx.fxml.FXMLLoader;
+import javafx.fxml.Initializable;
+import javafx.scene.Parent;
+import javafx.scene.layout.StackPane;
 
-public class HelloController {
+import java.io.IOException;
+import java.net.URL;
+import java.util.ResourceBundle;
+public class DashboardController implements Initializable {
     @FXML
-    private Label welcomeText;
+    private StackPane contentArea;
+    @Override
+    public void initialize(URL url, ResourceBundle resourceBundle) {
+        Parent fxml = null;
+        try {
+            fxml = FXMLLoader.load(getClass().getResource("report.fxml"));
+            contentArea.getChildren().clear();
+            contentArea.getChildren().add(fxml);
+        } catch (IOException e) {
+            throw new RuntimeException(e);
+        }
+
+    }
+    @FXML
+    public void dashboard(ActionEvent event) throws IOException {
+        Parent fxml = FXMLLoader.load(getClass().getResource("report.fxml"));
+        contentArea.getChildren().clear();
+        contentArea.getChildren().add(fxml);
+    }
+    @FXML
+    public void commande(ActionEvent event) throws IOException{
+        Parent fxml = FXMLLoader.load(getClass().getResource("commande.fxml"));
+        contentArea.getChildren().clear();
+        contentArea.getChildren().add(fxml);
+    }
 
     @FXML
-    protected void onHelloButtonClick() {
-        welcomeText.setText("Welcome to JavaFX Application!");
+    public void menu(ActionEvent event) throws IOException{
+        Parent fxml = FXMLLoader.load(getClass().getResource("menu.fxml"));
+        contentArea.getChildren().clear();
+        contentArea.getChildren().add(fxml);
+    }
+
+    @FXML
+    public void personnel(ActionEvent event) throws IOException{
+        Parent fxml = FXMLLoader.load(getClass().getResource("personnel.fxml"));
+        contentArea.getChildren().clear();
+        contentArea.getChildren().add(fxml);
+    }
+
+    @FXML
+    public void reservation(ActionEvent event) throws IOException{
+        Parent fxml = FXMLLoader.load(getClass().getResource("reservation.fxml"));
+        contentArea.getChildren().clear();
+        contentArea.getChildren().add(fxml);
+    }
+
+    @FXML
+    public void stock(ActionEvent event) throws IOException{
+        Parent fxml = FXMLLoader.load(getClass().getResource("stock.fxml"));
+        contentArea.getChildren().clear();
+        contentArea.getChildren().add(fxml);
+    }
+
+    @FXML
+    public void logout(ActionEvent event) throws IOException {
+        // Code pour gérer la déconnexion
     }
 }

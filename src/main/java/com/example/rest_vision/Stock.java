@@ -1,2 +1,4 @@
-package com.example.rest_vision;public class Stock {
+package com.example.rest_vision;
+
+public class Stock {
 }
