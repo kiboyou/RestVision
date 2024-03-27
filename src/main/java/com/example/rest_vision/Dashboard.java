@@ -15,7 +15,7 @@ public class Dashboard extends Application {
     public void start(Stage stage) throws IOException {
         FXMLLoader fxmlLoader = new FXMLLoader(Dashboard.class.getResource("dashboard.fxml"));
         Scene scene = new Scene(fxmlLoader.load(), 1336, 700);
-        Image image = new Image("file:///F:/projet javaFX/rest_vision/src/main/resources/com/example/rest_vision/img/icon-1.png");
+        Image image = new Image("file:///F:/projet javaFX/rest_vision/src/main/resources/com/example/rest_vision/public/img/utils/icon-1.png");
         stage.getIcons().add(image);
 //        stage.initStyle(StageStyle.UNDECORATED);
         stage.setTitle("Dashboard");

@@ -6,7 +6,7 @@
 <?import javafx.scene.layout.VBox?>
 <?import javafx.scene.text.Font?>
 
-<Pane prefHeight="650.0" prefWidth="1043.0" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.rest_vision.Menu">
+<Pane prefHeight="650.0" prefWidth="1043.0" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.rest_vision.controller.menu.Menu">
    <children>
       <VBox alignment="CENTER" layoutX="10.0" layoutY="10.0" prefHeight="650.0" prefWidth="1043.0">
          <children>

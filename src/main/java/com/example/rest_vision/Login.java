@@ -13,9 +13,9 @@ public class Login extends Application {
     double x, y=0;
     @Override
     public void start(Stage stage) throws IOException {
-        FXMLLoader fxmlLoader = new FXMLLoader(Login.class.getResource("login.fxml"));
+        FXMLLoader fxmlLoader = new FXMLLoader(Login.class.getResource("view/login/login.fxml"));
         Scene scene = new Scene(fxmlLoader.load(), 600, 400);
-        Image image = new Image("file:///F:/projet javaFX/rest_vision/src/main/resources/com/example/rest_vision/img/icon-1.png");
+        Image image = new Image("file:///F:/projet javaFX/rest_vision/src/main/resources/com/example/rest_vision/img/utils/icon-1.png");
         stage.getIcons().add(image);
         stage.initStyle(StageStyle.UNDECORATED);
         stage.setTitle("Login");

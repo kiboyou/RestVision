@@ -1,4 +1,4 @@
-package com.example.rest_vision;
+package com.example.rest_vision.controller.login;
 
 import com.jfoenix.controls.JFXButton;
 import javafx.animation.TranslateTransition;
