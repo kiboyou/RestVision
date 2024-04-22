@@ -5,6 +5,7 @@ import javafx.fxml.FXMLLoader;
 import javafx.scene.Scene;
 import javafx.scene.image.Image;
 import javafx.stage.Stage;
+import javafx.stage.StageStyle;
 
 import java.io.IOException;
 
@@ -12,7 +13,7 @@ public class Dashboard extends Application {
     double x, y=0;
     @Override
     public void start(Stage stage) throws IOException {
-        FXMLLoader fxmlLoader = new FXMLLoader(Dashboard.class.getResource("view/dashboard.fxml"));
+        FXMLLoader fxmlLoader = new FXMLLoader(Dashboard.class.getResource("/com/example/rest_vision/view/dashboard.fxml"));
         Scene scene = new Scene(fxmlLoader.load(), 1336, 700);
         Image image = new Image("file:///F:/projet javaFX/rest_vision/src/main/resources/com/example/rest_vision/public/img/utils/icon-1.png");
         stage.getIcons().add(image);
