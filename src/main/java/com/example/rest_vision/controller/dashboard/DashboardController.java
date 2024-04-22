@@ -15,9 +15,9 @@ public class DashboardController implements Initializable {
     private StackPane contentArea;
     @Override
     public void initialize(URL url, ResourceBundle resourceBundle) {
-        Parent fxml = null;
+//        Parent fxml = null;
         try {
-            fxml = FXMLLoader.load(getClass().getResource("report.fxml"));
+            Parent fxml = FXMLLoader.load(getClass().getResource("report.fxml"));
             contentArea.getChildren().clear();
             contentArea.getChildren().add(fxml);
         } catch (IOException e) {

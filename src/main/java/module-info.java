@@ -20,4 +20,6 @@ module com.example.rest_vision {
     opens com.example.rest_vision.controller.reservation to javafx.fxml;
     exports com.example.rest_vision.controller.stock;
     opens com.example.rest_vision.controller.stock to javafx.fxml;
+    exports com.example.rest_vision.controller.report;
+    opens com.example.rest_vision.controller.report to javafx.fxml;
 }
