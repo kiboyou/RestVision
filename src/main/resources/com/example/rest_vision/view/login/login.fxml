@@ -2,7 +2,6 @@
 
 <?import com.jfoenix.controls.JFXButton?>
 <?import javafx.scene.control.ComboBox?>
-<?import javafx.scene.control.Hyperlink?>
 <?import javafx.scene.control.Label?>
 <?import javafx.scene.control.PasswordField?>
 <?import javafx.scene.control.TextField?>
@@ -23,22 +22,21 @@
                         <Font size="24.0" />
                      </font>
                   </Label>
-                  <TextField fx:id="login" layoutX="27.0" layoutY="130.0" prefHeight="30.0" prefWidth="220.0" promptText="Login" styleClass="textfield" stylesheets="@../../public/css/style.css">
+                  <TextField fx:id="login" layoutX="27.0" layoutY="153.0" prefHeight="30.0" prefWidth="220.0" promptText="Login" styleClass="textfield" stylesheets="@../../public/css/style.css">
                      <font>
                         <Font size="15.0" />
                      </font>
                   </TextField>
-                  <PasswordField fx:id="password" layoutX="27.0" layoutY="182.0" prefHeight="30.0" prefWidth="220.0" promptText="Mot de passe" styleClass="textfield" stylesheets="@../../public/css/style.css">
+                  <PasswordField fx:id="password" layoutX="27.0" layoutY="205.0" prefHeight="30.0" prefWidth="220.0" promptText="Mot de passe" styleClass="textfield" stylesheets="@../../public/css/style.css">
                      <font>
                         <Font size="15.0" />
                      </font>
                   </PasswordField>
-                  <JFXButton fx:id="loginBtn" layoutX="27.0" layoutY="270.0" prefHeight="35.0" prefWidth="220.0" styleClass="login-btn" stylesheets="@../../public/css/style.css" text="Se connecter" textFill="WHITE">
+                  <JFXButton fx:id="loginBtn" layoutX="27.0" layoutY="270.0" onAction="#login" prefHeight="35.0" prefWidth="220.0" styleClass="login-btn" stylesheets="@../../public/css/style.css" text="Se connecter" textFill="WHITE">
                      <font>
                         <Font size="18.0" />
                      </font>
                   </JFXButton>
-                  <Hyperlink fx:id="forgotPwd" layoutX="27.0" layoutY="232.0" text="Mot de passe oublie?" textFill="#f6a347" />
                   <Label fx:id="close" alignment="CENTER" contentDisplay="CENTER" layoutX="258.0" prefHeight="30.0" prefWidth="42.0" styleClass="close-btn" stylesheets="@../../public/css/style.css" text="X" textFill="#dddddd">
                      <font>
                         <Font size="22.0" />

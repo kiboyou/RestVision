@@ -3,6 +3,8 @@ module com.example.rest_vision {
     requires javafx.fxml;
     requires com.jfoenix;
     requires java.logging;
+    requires java.sql;
+    requires mysql.connector.j;
 
     opens com.example.rest_vision to javafx.fxml;
     exports com.example.rest_vision;

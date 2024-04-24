@@ -37,21 +37,18 @@ public class DashboardController implements Initializable {
         contentArea.getChildren().clear();
         contentArea.getChildren().add(fxml);
     }
-
     @FXML
     public void menu(ActionEvent event) throws IOException{
         Parent fxml = FXMLLoader.load(getClass().getResource("/com/example/rest_vision/view/menu/menu.fxml"));
         contentArea.getChildren().clear();
         contentArea.getChildren().add(fxml);
     }
-
     @FXML
     public void personnel(ActionEvent event) throws IOException{
         Parent fxml = FXMLLoader.load(getClass().getResource("/com/example/rest_vision/view/personnel/personnel.fxml"));
         contentArea.getChildren().clear();
         contentArea.getChildren().add(fxml);
     }
-
     @FXML
     public void reservation(ActionEvent event) throws IOException{
         Parent fxml = FXMLLoader.load(getClass().getResource("/com/example/rest_vision/view/reservation/reservation.fxml"));

@@ -17,7 +17,7 @@
    <children>
       <HBox prefHeight="700.0" prefWidth="1336.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
          <children>
-            <VBox alignment="CENTER" prefHeight="700.0" prefWidth="300.0" style="-fx-background-color: #f0f0f2;">
+            <VBox alignment="CENTER" prefHeight="671.0" prefWidth="292.0" style="-fx-background-color: #fff;" HBox.hgrow="ALWAYS">
                <children>
                   <ImageView fitHeight="83.0" fitWidth="117.0" pickOnBounds="true" preserveRatio="true" VBox.vgrow="ALWAYS">
                      <VBox.margin>
@@ -29,7 +29,7 @@
                   </ImageView>
                   <VBox alignment="CENTER" prefHeight="500.0" prefWidth="300.0" stylesheets="@../public/css/style.css" VBox.vgrow="ALWAYS">
                      <children>
-                        <JFXButton fx:id="dashboard" alignment="CENTER" graphicTextGap="20.0" onAction="#dashboard" prefHeight="42.0" prefWidth="300.0" style="-fx-background-color: #e4e4e2;" text="Dashboard" textFill="#ac6724" VBox.vgrow="ALWAYS">
+                        <JFXButton alignment="CENTER" graphicTextGap="20.0" onAction="#dashboard" prefHeight="37.0" prefWidth="232.0" style="-fx-background-color: #e4e4e2;" text="Dashboard" textFill="#ac6724" VBox.vgrow="ALWAYS">
                            <VBox.margin>
                               <Insets bottom="5.0" />
                            </VBox.margin>
@@ -50,7 +50,7 @@
                               <Cursor fx:constant="HAND" />
                            </cursor>
                         </JFXButton>
-                        <JFXButton fx:id="menu" alignment="CENTER" graphicTextGap="50.0" layoutX="10.0" layoutY="10.0" onAction="#menu" prefHeight="42.0" prefWidth="300.0" style="-fx-background-color: #e4e4e2;" text="Menus" textFill="#ac6724" VBox.vgrow="ALWAYS">
+                        <JFXButton fx:id="menu" alignment="CENTER" graphicTextGap="50.0" layoutX="10.0" layoutY="10.0" onAction="#menu" prefHeight="39.0" prefWidth="234.0" style="-fx-background-color: #e4e4e2;" text="Menus" textFill="#ac6724" VBox.vgrow="ALWAYS">
                            <padding>
                               <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
                            </padding>
@@ -74,7 +74,7 @@
                               <Cursor fx:constant="HAND" />
                            </cursor>
                         </JFXButton>
-                        <JFXButton fx:id="reservation" alignment="CENTER" layoutX="10.0" layoutY="52.0" onAction="#reservation" prefHeight="42.0" prefWidth="300.0" style="-fx-background-color: #e4e4e2;" text=" Reservations" textFill="#ac6724" VBox.vgrow="ALWAYS">
+                        <JFXButton fx:id="reservation" alignment="CENTER" layoutX="10.0" layoutY="52.0" onAction="#reservation" prefHeight="40.0" prefWidth="234.0" style="-fx-background-color: #e4e4e2;" text=" Reservations" textFill="#ac6724" VBox.vgrow="ALWAYS">
                            <padding>
                               <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
                            </padding>
@@ -95,7 +95,7 @@
                               <Insets bottom="5.0" />
                            </VBox.margin>
                         </JFXButton>
-                        <JFXButton fx:id="commande" alignment="CENTER" graphicTextGap="10.0" layoutX="10.0" layoutY="94.0" onAction="#commande" prefHeight="42.0" prefWidth="300.0" style="-fx-background-color: #e4e4e2;" text="Commandes" textFill="#ac6724" VBox.vgrow="ALWAYS">
+                        <JFXButton fx:id="commande" alignment="CENTER" graphicTextGap="10.0" layoutX="10.0" layoutY="94.0" onAction="#commande" prefHeight="40.0" prefWidth="235.0" style="-fx-background-color: #e4e4e2;" text="Commandes" textFill="#ac6724" VBox.vgrow="ALWAYS">
                            <padding>
                               <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
                            </padding>
@@ -116,7 +116,7 @@
                               <Insets bottom="5.0" />
                            </VBox.margin>
                         </JFXButton>
-                        <JFXButton fx:id="stock" alignment="CENTER" graphicTextGap="50.0" layoutX="10.0" layoutY="136.0" onAction="#stock" prefHeight="42.0" prefWidth="300.0" style="-fx-background-color: #e4e4e2;" text="Stocks" textFill="#ac6724">
+                        <JFXButton fx:id="stock" alignment="CENTER" graphicTextGap="50.0" layoutX="10.0" layoutY="136.0" onAction="#stock" prefHeight="40.0" prefWidth="237.0" style="-fx-background-color: #e4e4e2;" text="Stocks" textFill="#ac6724">
                            <padding>
                               <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
                            </padding>
@@ -137,7 +137,7 @@
                               <Insets bottom="5.0" />
                            </VBox.margin>
                         </JFXButton>
-                        <JFXButton fx:id="personnel" alignment="CENTER" graphicTextGap="15.0" layoutX="10.0" layoutY="181.0" onAction="#personnel" prefHeight="42.0" prefWidth="300.0" style="-fx-background-color: #e4e4e2;" text="Personnels" textFill="#ac6724">
+                        <JFXButton fx:id="personnel" alignment="CENTER" graphicTextGap="15.0" layoutX="10.0" layoutY="181.0" onAction="#personnel" prefHeight="40.0" prefWidth="237.0" style="-fx-background-color: #e4e4e2;" text="Personnels" textFill="#ac6724">
                            <padding>
                               <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
                            </padding>
@@ -184,7 +184,7 @@
                   </VBox>
                </children>
                <HBox.margin>
-                  <Insets right="1.0" />
+                  <Insets right="1.0" top="1.0" />
                </HBox.margin>
                <opaqueInsets>
                   <Insets />
@@ -194,28 +194,34 @@
                <children>
                   <BorderPane prefHeight="50.0" prefWidth="1036.0">
                      <top>
-                        <HBox alignment="TOP_RIGHT" prefHeight="50.0" prefWidth="1026.0" style="-fx-background-color: #f0f0f2;" BorderPane.alignment="CENTER">
+                        <HBox alignment="TOP_RIGHT" prefHeight="50.0" prefWidth="1026.0" style="-fx-background-color: #fff;" BorderPane.alignment="CENTER">
                            <children>
-                              <Label alignment="CENTER" prefHeight="50.0" prefWidth="149.0" text="Emmanuel Bilong" textFill="#ac6724" HBox.hgrow="ALWAYS">
+                              <Label alignment="CENTER_RIGHT" prefHeight="40.0" prefWidth="105.0" text="Bienvenue," textFill="#ac6724" HBox.hgrow="ALWAYS">
+                                 <font>
+                                    <Font name="Arial" size="15.0" />
+                                 </font>
+                                 <padding>
+                                    <Insets bottom="5.0" left="5.0" top="5.0" />
+                                 </padding>
+                                 <HBox.margin>
+                                    <Insets bottom="5.0" left="5.0" top="5.0" />
+                                 </HBox.margin>
+                              </Label>
+                              <Label fx:id="user_connected" contentDisplay="CENTER" layoutX="854.0" layoutY="15.0" prefHeight="50.0" prefWidth="116.0" text="user" textFill="#ac6724" HBox.hgrow="ALWAYS">
                                  <font>
                                     <Font name="Arial" size="14.0" />
                                  </font>
+                                 <HBox.margin>
+                                    <Insets bottom="5.0" right="5.0" top="5.0" />
+                                 </HBox.margin>
                                  <padding>
-                                    <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
+                                    <Insets bottom="5.0" left="5.0" top="5.0" />
                                  </padding>
-                                 <HBox.margin>
-                                    <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
-                                 </HBox.margin>
                               </Label>
-                              <ImageView fitHeight="30.0" fitWidth="30.0" pickOnBounds="true" preserveRatio="true" HBox.hgrow="ALWAYS">
-                                 <HBox.margin>
-                                    <Insets bottom="5.0" left="5.0" right="10.0" top="10.0" />
-                                 </HBox.margin>
-                                 <image>
-                                    <Image url="@../public/img/utils/user.png" />
-                                 </image>
-                              </ImageView>
                            </children>
+                           <BorderPane.margin>
+                              <Insets top="1.0" />
+                           </BorderPane.margin>
                         </HBox>
                      </top>
                   </BorderPane>
