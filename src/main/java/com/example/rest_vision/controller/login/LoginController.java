@@ -1,6 +1,7 @@
 package com.example.rest_vision.controller.login;
 
 import com.example.rest_vision.Database;
+import com.example.rest_vision.model.Data;
 import com.jfoenix.controls.JFXButton;
 import javafx.animation.TranslateTransition;
 import javafx.event.ActionEvent;
@@ -79,6 +80,7 @@ public class LoginController implements Initializable {
                 alert.showAndWait();
             }else {
                 if (resultSet.next()){
+                    Data.userName = login.getText();
 //                    alert = new Alert(Alert.AlertType.INFORMATION);
 //                    alert.setTitle("Information de connexion");
 //                    alert.setHeaderText(null);

@@ -20,7 +20,7 @@
    <children>
       <AnchorPane layoutX="14.0" layoutY="12.0" prefHeight="627.0" prefWidth="664.0" style="-fx-background-color: #fff;">
          <children>
-            <TableView fx:id="liste_commande" layoutX="6.0" layoutY="9.0" prefHeight="618.0" prefWidth="656.0">
+            <TableView fx:id="liste_commande" layoutX="4.0" layoutY="5.0" prefHeight="618.0" prefWidth="656.0">
               <columns>
                 <TableColumn fx:id="id_menu_col" prefWidth="65.0" text="ID MENU" />
                 <TableColumn fx:id="nom_menu_col" prefWidth="158.0" text="NOM MENU" />
