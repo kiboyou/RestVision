@@ -11,9 +11,9 @@
 <?import javafx.scene.layout.Pane?>
 <?import javafx.scene.text.Font?>
 
-<Pane prefHeight="650.0" prefWidth="1043.0" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.rest_vision.controller.menu.Menu">
+<Pane prefHeight="650.0" prefWidth="1043.0" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.rest_vision.controller.report.Report">
    <children>
-      <AnchorPane prefHeight="650.0" prefWidth="1043.0">
+      <AnchorPane fx:id="report" prefHeight="650.0" prefWidth="1043.0">
          <children>
             <AnchorPane layoutX="-1.0" layoutY="14.0" prefHeight="168.0" prefWidth="1058.0">
                <children>
@@ -32,14 +32,14 @@
                               <Font name="System Bold" size="12.0" />
                            </font>
                         </Label>
-                        <Label alignment="TOP_RIGHT" contentDisplay="RIGHT" layoutX="89.0" layoutY="23.0" prefHeight="28.0" prefWidth="136.0" text="0" textAlignment="RIGHT" textFill="#ac6724">
+                        <Label fx:id="dashboard_nc" alignment="TOP_RIGHT" contentDisplay="RIGHT" layoutX="89.0" layoutY="23.0" prefHeight="28.0" prefWidth="136.0" text="0" textAlignment="RIGHT" textFill="#ac6724">
                            <font>
                               <Font name="System Bold" size="22.0" />
                            </font>
                         </Label>
                      </children>
                   </AnchorPane>
-                  <AnchorPane layoutX="297.0" layoutY="13.0" prefHeight="144.0" prefWidth="217.0" style="-fx-background-color: #fff;">
+                  <AnchorPane fx:id="dashboard_rj" layoutX="297.0" layoutY="13.0" prefHeight="144.0" prefWidth="217.0" style="-fx-background-color: #fff;">
                      <padding>
                         <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
                      </padding>
@@ -61,7 +61,7 @@
                         </Label>
                      </children>
                   </AnchorPane>
-                  <AnchorPane layoutX="536.0" layoutY="13.0" prefHeight="144.0" prefWidth="201.0" style="-fx-background-color: #fff;">
+                  <AnchorPane fx:id="dashboard_tv" layoutX="536.0" layoutY="13.0" prefHeight="144.0" prefWidth="201.0" style="-fx-background-color: #fff;">
                      <padding>
                         <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
                      </padding>
@@ -98,7 +98,7 @@
                               <Font name="System Bold" size="12.0" />
                            </font>
                         </Label>
-                        <Label alignment="TOP_RIGHT" contentDisplay="RIGHT" layoutX="79.0" layoutY="33.0" prefHeight="32.0" prefWidth="124.0" text="0" textAlignment="RIGHT" textFill="#ac6724">
+                        <Label fx:id="dashboard_tc" alignment="TOP_RIGHT" contentDisplay="RIGHT" layoutX="79.0" layoutY="33.0" prefHeight="32.0" prefWidth="124.0" text="0" textAlignment="RIGHT" textFill="#ac6724">
                            <font>
                               <Font name="System Bold" size="22.0" />
                            </font>
@@ -111,7 +111,7 @@
                <children>
                   <AnchorPane layoutX="11.0" layoutY="33.0" prefHeight="402.0" prefWidth="423.0">
                      <children>
-                        <BarChart layoutX="17.0" layoutY="18.0" prefHeight="372.0" prefWidth="423.0" title="Diagramme 1">
+                        <BarChart fx:id="diagram_tc" layoutX="17.0" layoutY="18.0" prefHeight="372.0" prefWidth="423.0" title="Total Commande">
                           <xAxis>
                             <CategoryAxis side="BOTTOM" />
                           </xAxis>
@@ -123,7 +123,7 @@
                   </AnchorPane>
                   <AnchorPane layoutX="465.0" layoutY="50.0" prefHeight="395.0" prefWidth="459.0">
                      <children>
-                        <BarChart layoutY="-1.0" prefHeight="372.0" prefWidth="459.0" title="Diagramme 2">
+                        <BarChart fx:id="diagram_tv" layoutY="-1.0" prefHeight="372.0" prefWidth="459.0" title="Total Vente">
                           <xAxis>
                             <CategoryAxis side="BOTTOM" />
                           </xAxis>
