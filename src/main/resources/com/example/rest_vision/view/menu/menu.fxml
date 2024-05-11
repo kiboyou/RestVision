@@ -31,10 +31,10 @@
                   <Font size="14.0" />
                </font>
             </Label>
-            <Button fx:id="btn_ajouter_menu" layoutX="99.0" layoutY="256.0" mnemonicParsing="false" prefHeight="25.0" prefWidth="79.0" text="Ajouter" />
-            <Button fx:id="btn_editer_menu" layoutX="236.0" layoutY="257.0" mnemonicParsing="false" prefHeight="25.0" prefWidth="79.0" text="Modifier" />
-            <Button fx:id="btn_supprimer_menu" layoutX="235.0" layoutY="317.0" mnemonicParsing="false" prefHeight="25.0" prefWidth="79.0" text="Supprimer" />
-            <Button fx:id="btn_annuler" layoutX="97.0" layoutY="316.0" mnemonicParsing="false" prefHeight="25.0" prefWidth="79.0" text="Annuler" />
+            <Button fx:id="btn_ajouter_menu" layoutX="99.0" layoutY="256.0" mnemonicParsing="false" onAction="#ajouterMenu" prefHeight="25.0" prefWidth="79.0" text="Ajouter" />
+            <Button fx:id="btn_editer_menu" layoutX="236.0" layoutY="257.0" mnemonicParsing="false" onAction="#editerMenu" prefHeight="25.0" prefWidth="79.0" text="Modifier" />
+            <Button fx:id="btn_supprimer_menu" layoutX="235.0" layoutY="317.0" mnemonicParsing="false" onAction="#supprimerMenu" prefHeight="25.0" prefWidth="79.0" text="Supprimer" />
+            <Button fx:id="btn_annuler" layoutX="97.0" layoutY="316.0" mnemonicParsing="false" onAction="#effacerMenu" prefHeight="25.0" prefWidth="79.0" text="Annuler" />
             <TextField fx:id="id_menu" layoutX="100.0" layoutY="46.0" prefHeight="25.0" prefWidth="217.0" />
             <Label layoutX="37.0" layoutY="199.0" prefHeight="25.0" prefWidth="57.0" text="Status:">
                <font>
@@ -54,13 +54,13 @@
       </AnchorPane>
       <AnchorPane fx:id="menu_form" layoutX="360.0" layoutY="6.0" prefHeight="638.0" prefWidth="660.0" style="-fx-background-color: #fff;">
          <children>
-            <TextField fx:id="recherche_menu" layoutX="44.0" layoutY="11.0" prefHeight="35.0" prefWidth="294.0" promptText="Rechercher un menu" style="-fx-padding: 0 0 0 28px;" />
+            <TextField fx:id="recherche_menu" layoutX="44.0" layoutY="11.0" onKeyTyped="#rechercherMenu" prefHeight="35.0" prefWidth="294.0" promptText="Rechercher un menu" style="-fx-padding: 0 0 0 28px;" />
             <ImageView fitHeight="25.0" fitWidth="19.0" layoutX="47.0" layoutY="19.0" pickOnBounds="true" preserveRatio="true">
                <image>
                   <Image url="@../../public/img/utils/search.png" />
                </image>
             </ImageView>
-            <TableView fx:id="liste_menu" layoutX="4.0" layoutY="69.0" prefHeight="554.0" prefWidth="649.0">
+            <TableView fx:id="liste_menu" layoutX="4.0" layoutY="69.0" onMouseClicked="#selectionnerUnMenu" prefHeight="554.0" prefWidth="649.0">
                <columns>
                   <TableColumn fx:id="id_menu_col" prefWidth="65.0" text="ID MENU" />
                   <TableColumn fx:id="nom_menu_col" prefWidth="158.0" text="NOM MENU" />
