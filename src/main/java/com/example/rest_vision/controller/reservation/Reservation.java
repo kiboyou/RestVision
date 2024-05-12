@@ -186,6 +186,7 @@ public class Reservation implements Initializable {
 
                 clear();
                 showReservation();
+                showPlace();
             }
 
         } catch (SQLException e) {
@@ -301,6 +302,7 @@ public class Reservation implements Initializable {
                     successAlert.showAndWait();
                 }
                 showReservation();
+                showPlace();
                 clear();
             } catch (SQLException e) {
                 /* throw new RuntimeException(e); */
@@ -319,7 +321,7 @@ public class Reservation implements Initializable {
         connect = Database.connectDd();
         try {
             prepare = connect.prepareStatement(sqlConfirm);
-            prepare.setString(1, "Terminer");
+            prepare.setString(1, "Terminée");
             prepare.setInt(2, id);
 
             if (prepare.executeUpdate() >0 ){
@@ -330,6 +332,7 @@ public class Reservation implements Initializable {
                 successAlert.showAndWait();
             }
             showReservation();
+            showPlace();
             clear();
         } catch (SQLException e) {
             /*throw new RuntimeException(e);*/
@@ -337,7 +340,7 @@ public class Reservation implements Initializable {
             Alert exceptionAlert = new Alert(Alert.AlertType.ERROR);
             exceptionAlert.setTitle("Erreur SQL");
             exceptionAlert.setHeaderText(null);
-            exceptionAlert.setContentText("Une erreur s'est produite lors de la confirmation de la réservation.");
+            exceptionAlert.setContentText("Une erreur s'est produite lors de la clôture de la réservation.");
             exceptionAlert.showAndWait();
         }
     }
