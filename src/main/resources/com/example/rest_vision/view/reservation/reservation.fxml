@@ -1,27 +1,56 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
-<?import javafx.geometry.Insets?>
-<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.DatePicker?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextField?>
 <?import javafx.scene.layout.Pane?>
-<?import javafx.scene.layout.VBox?>
 <?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
 
-<Pane prefHeight="650.0" prefWidth="1043.0" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.rest_vision.controller.menu.Menu">
+<Pane prefHeight="650.0" prefWidth="1043.0" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.rest_vision.controller.reservation.Reservation">
    <children>
-      <VBox alignment="CENTER" layoutX="10.0" layoutY="10.0" prefHeight="650.0" prefWidth="1043.0">
+      <TableView fx:id="reservationView" layoutX="5.0" layoutY="373.0" onMouseClicked="#getReservationData" prefHeight="264.0" prefWidth="1035.0">
+        <columns>
+          <TableColumn fx:id="idReservationCol" prefWidth="47.0" text="ID" />
+          <TableColumn fx:id="lnameReservationCol" prefWidth="109.0" text="Lastname" />
+            <TableColumn fx:id="fnameReservationCol" prefWidth="176.0" text="Firstname" />
+            <TableColumn fx:id="phoneReservationCol" prefWidth="128.0" text="Phone" />
+            <TableColumn fx:id="placeReservationCol" prefWidth="76.0" text="Table" />
+            <TableColumn fx:id="inReservationCol" prefWidth="110.0" text="CheckIn" />
+            <TableColumn fx:id="timeInReservationCol" prefWidth="134.0" text="Time Check-In" />
+            <TableColumn fx:id="timeOutReservationCol" prefWidth="137.0" text="Time Check-Out" />
+            <TableColumn fx:id="statutReservationCol" prefWidth="117.0" text="Status" />
+        </columns>
+      </TableView>
+      <TableView fx:id="placeView" layoutX="615.0" layoutY="100.0" prefHeight="199.0" prefWidth="423.0">
+        <columns>
+          <TableColumn fx:id="idPlaceCol" prefWidth="75.0" text="ID" />
+          <TableColumn fx:id="numPlaceCol" prefWidth="155.0" text="Place pour" />
+            <TableColumn fx:id="statutPlaceCol" prefWidth="180.0" text="Statut" />
+        </columns>
+      </TableView>
+      <Pane layoutX="6.0" layoutY="50.0" prefHeight="288.0" prefWidth="593.0" styleClass="card-reservation-login" stylesheets="@../public/css/style.css">
          <children>
-            <Label prefHeight="47.0" prefWidth="326.0" text="Reservation" textFill="WHITE" VBox.vgrow="ALWAYS">
-               <padding>
-                  <Insets bottom="10.0" left="10.0" right="10.0" top="10.0" />
-               </padding>
-               <VBox.margin>
-                  <Insets top="5.0" />
-               </VBox.margin>
-               <font>
-                  <Font name="System Bold" size="24.0" />
-               </font>
-            </Label>
+            <TextField fx:id="lastnameIn" layoutX="64.0" layoutY="33.0" prefHeight="34.0" prefWidth="221.0" promptText="Enter lastname" />
+            <TextField fx:id="firstnameIn" layoutX="326.0" layoutY="33.0" prefHeight="34.0" prefWidth="242.0" promptText="Enter firstname" />
+            <TextField fx:id="phoneIn" layoutX="63.0" layoutY="172.0" prefHeight="34.0" prefWidth="226.0" promptText="Enter mobile phone" />
+            <Button fx:id="addBtn" layoutX="65.0" layoutY="225.0" mnemonicParsing="false" onAction="#addReservation" prefHeight="45.0" prefWidth="117.0" styleClass="add-btn-reservation" stylesheets="@../public/css/style.css" text="ADD" textAlignment="CENTER" />
+            <Button fx:id="endBtn" contentDisplay="CENTER" layoutX="197.0" layoutY="224.0" mnemonicParsing="false" onAction="#endReservation" prefHeight="45.0" prefWidth="117.0" styleClass="confirm-btn-reservation" stylesheets="@../public/css/style.css" text="FINISH" />
+            <Button fx:id="cancelBtn" layoutX="329.0" layoutY="224.0" mnemonicParsing="false" onAction="#cancelReservation" prefHeight="45.0" prefWidth="117.0" styleClass="cancel-btn-reservation" stylesheets="@../public/css/style.css" text="CANCEL" />
+            <DatePicker fx:id="datecheckin" layoutX="64.0" layoutY="101.0" prefHeight="34.0" prefWidth="127.0" promptText="choose date" />
+            <ComboBox fx:id="peopleIn" layoutX="327.0" layoutY="172.0" prefHeight="34.0" prefWidth="242.0" promptText="People's number" />
+            <Button fx:id="cancelBtn1" layoutX="459.0" layoutY="224.0" mnemonicParsing="false" onAction="#resetAll" prefHeight="45.0" prefWidth="117.0" styleClass="add-btn-reservation" stylesheets="@../public/css/style.css" text="RESET" />
+            <TextField fx:id="timecheckin" layoutX="206.0" layoutY="102.0" prefHeight="34.0" prefWidth="170.0" promptText="timeIN: 11h30" />
+            <TextField fx:id="timecheckout" layoutX="398.0" layoutY="102.0" prefHeight="34.0" prefWidth="170.0" promptText="timeOUT: 12h30" />
          </children>
-      </VBox>
+      </Pane>
+      <Text layoutX="698.0" layoutY="84.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Places available">
+         <font>
+            <Font size="30.0" />
+         </font>
+      </Text>
    </children>
 </Pane>
