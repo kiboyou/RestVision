@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.DatePicker?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.Pane?>
+
+<Pane prefHeight="650.0" prefWidth="1043.0" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.rest_vision.controller.personnel.EmployeController">
+    <children>
+        <TableView fx:id="employesView" onMouseClicked="#getEmploye" layoutX="39.0" layoutY="294.0" prefHeight="278.0" prefWidth="965.0">
+            <columns>
+                <TableColumn fx:id="idEmployeeCol" prefWidth="37.0" text="ID" />
+                <TableColumn fx:id="nameEmployee" prefWidth="140.0" text="Lastname" />
+                <TableColumn fx:id="fnameEmployeCol" prefWidth="127.0" text="Firstname" />
+                <TableColumn fx:id="fadressEmployeCol" prefWidth="163.0" text="Adresse" />
+                <TableColumn fx:id="femailEmployeCol" prefWidth="236.0" text="Email" />
+                <TableColumn fx:id="fphoneEmployeCol" prefWidth="143.0" text="Phone" />
+                <TableColumn fx:id="fpostEmployeCol" prefWidth="154.0" text="Post" />
+            </columns>
+        </TableView>
+        <Pane layoutX="47.0" layoutY="12.0" prefHeight="264.0" prefWidth="939.0" styleClass="card-reservation-login">
+            <children>
+                <TextField fx:id="prenomField" layoutX="24.0" layoutY="33.0" prefHeight="34.0" prefWidth="221.0" promptText="Enter lastname" />
+                <TextField fx:id="nomField" layoutX="286.0" layoutY="33.0" prefHeight="34.0" prefWidth="242.0" promptText="Enter firstname" />
+                <TextField fx:id="adresseField" layoutX="24.0" layoutY="84.0" prefHeight="34.0" prefWidth="221.0" promptText="Enter l'adresse" />
+                <TextField fx:id="phoneIn" layoutX="23.0" layoutY="134.0" prefHeight="34.0" prefWidth="221.0" promptText="Enter mobile phone" />
+
+                <Button fx:id="addBtn" layoutX="762.0" layoutY="28.0" mnemonicParsing="false" onAction="#ajouterEmployeAction" prefHeight="45.0" prefWidth="117.0" styleClass="add-btn-reservation" text="ADD" textAlignment="CENTER" />
+                <!--                <Button fx:id="endBtn" contentDisplay="CENTER" layoutX="763.0" layoutY="97.0" mnemonicParsing="false" onAction="#modifierEmployeAction" prefHeight="45.0" prefWidth="117.0" styleClass="confirm-btn-reservation" text="UPDATE" />-->
+                <Button fx:id="cancelBtn" layoutX="763.0" layoutY="167.0" mnemonicParsing="false" onAction="#supprimerEmployeAction" prefHeight="45.0" prefWidth="117.0" styleClass="cancel-btn-reservation" text="DELETE" />
+
+                <TextField fx:id="dateNaissanceField" layoutX="286.0" layoutY="84.0" prefHeight="34.0" prefWidth="242.0" promptText="date de naissance" />
+                <TextField fx:id="emailField" layoutX="286.0" layoutY="134.0" prefHeight="34.0" prefWidth="242.0" promptText="Enter email" />
+                <!--                <ComboBox fx:id="peopleIn" layoutX="327.0" layoutY="172.0" prefHeight="34.0" prefWidth="242.0" promptText="People's number" />-->
+                <TextField fx:id="horairesTravailField" layoutX="555.0" layoutY="134.0" prefHeight="34.0" prefWidth="187.0" promptText="horaire de travail : 08h-10h" />
+                <!--                <TextField fx:id="timecheckout" layoutX="564.0" layoutY="134.0" prefHeight="34.0" prefWidth="170.0" promptText="timeOUT: 12h30" />-->
+                <TextField fx:id="InpostField" layoutX="25.0" layoutY="190.0" prefHeight="34.0" prefWidth="506.0" promptText="Enter post" />
+                <TextField fx:id="dateEmbauchestr" layoutX="555.0" layoutY="84.0" prefHeight="34.0" prefWidth="187.0" promptText="date d'Embauche" />
+            </children>
+        </Pane>
+    </children>
+</Pane>

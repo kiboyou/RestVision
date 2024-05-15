@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.Pane?>
+
+<Pane prefHeight="650.0" prefWidth="1043.0" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.rest_vision.controller.personnel.DemandeCongeController">
+    <children>
+        <TableView fx:id="DemandesCongesView" layoutX="30.0" layoutY="294.0" onMouseClicked="#getDemandesConge" prefHeight="278.0" prefWidth="974.0">
+            <columns>
+                <TableColumn fx:id="idDemandesCongeeCol" prefWidth="37.0" text="ID" />
+                <TableColumn fx:id="nameDemandesCongee" prefWidth="140.0" text="DemandesCongeID" />
+                <TableColumn fx:id="fnameDemandesCongeCol" prefWidth="142.0" text="DatesCongeDebut" />
+                <TableColumn fx:id="fadressDemandesCongeCol" prefWidth="148.0" text="DatesCongeFin" />
+                <TableColumn fx:id="femailDemandesCongeCol" prefWidth="151.0" text="MotifConge" />
+                <TableColumn fx:id="fphoneDemandesCongeCol" minWidth="0.0" prefWidth="170.0" text="DureeConge" />
+                <TableColumn fx:id="fpostDemandesCongeCol" prefWidth="212.0" text="StatutDemande" />
+            </columns>
+        </TableView>
+        <Pane layoutX="30.0" layoutY="13.0" prefHeight="264.0" prefWidth="1000.0" styleClass="card-reservation-login">
+            <children>
+                <TextField fx:id="prenomField" layoutX="24.0" layoutY="33.0" prefHeight="34.0" prefWidth="221.0" promptText="DemandesCongeID" />
+                <TextField fx:id="nomField" layoutX="286.0" layoutY="33.0" prefHeight="34.0" prefWidth="242.0" promptText="DureeConge" />
+                <TextField fx:id="adresseField" layoutX="24.0" layoutY="84.0" prefHeight="34.0" prefWidth="221.0" promptText="DatesCongeDebut" />
+                <TextField fx:id="phoneIn" layoutX="23.0" layoutY="134.0" prefHeight="34.0" prefWidth="221.0" promptText="DatesCongeFin" />
+
+                <Button fx:id="addBtn" layoutX="837.0" layoutY="62.0" mnemonicParsing="false" onAction="#ajouterDemandesCongeAction" prefHeight="45.0" prefWidth="117.0" styleClass="add-btn-reservation" text="ADD" textAlignment="CENTER" />
+                <!--                <Button fx:id="endBtn" contentDisplay="CENTER" layoutX="763.0" layoutY="97.0" mnemonicParsing="false" onAction="#modifierDemandesCongeAction" prefHeight="45.0" prefWidth="117.0" styleClass="confirm-btn-reservation" text="UPDATE" />-->
+                <Button fx:id="cancelBtn" layoutX="842.0" layoutY="149.0" mnemonicParsing="false" onAction="#supprimerDemandesCongeAction" prefHeight="45.0" prefWidth="117.0" styleClass="cancel-btn-reservation" text="DELETE" />
+
+                <TextField fx:id="dateNaissanceField" layoutX="286.0" layoutY="84.0" prefHeight="34.0" prefWidth="242.0" promptText="MotifConge" />
+                <TextField fx:id="emailField" layoutX="286.0" layoutY="134.0" prefHeight="34.0" prefWidth="242.0" promptText="SoldeCongeActuel" />
+                <!--                <ComboBox fx:id="peopleIn" layoutX="327.0" layoutY="172.0" prefHeight="34.0" prefWidth="242.0" promptText="People's number" />-->
+                <TextField fx:id="horairesTravailField" layoutX="555.0" layoutY="84.0" prefHeight="34.0" prefWidth="206.0" promptText="ApprobationsHierarchiques" />
+                <!--                <TextField fx:id="timecheckout" layoutX="564.0" layoutY="134.0" prefHeight="34.0" prefWidth="170.0" promptText="timeOUT: 12h30" />-->
+                <TextField fx:id="InpostField" layoutX="25.0" layoutY="190.0" prefHeight="34.0" prefWidth="221.0" promptText="TypeConge" />
+                <TextField fx:id="dateEmbauchestr" layoutX="555.0" layoutY="33.0" prefHeight="34.0" prefWidth="206.0" promptText="DateSoumission" />
+                <TextField fx:id="InpostField1" layoutX="286.0" layoutY="190.0" prefHeight="34.0" prefWidth="242.0" promptText="StatutDemande" />
+                <TextField fx:id="dateEmbauchestr1" layoutX="555.0" layoutY="137.0" prefHeight="34.0" prefWidth="206.0" promptText="DocumentsJustificatifs" />
+            </children>
+        </Pane>
+    </children>
+</Pane>

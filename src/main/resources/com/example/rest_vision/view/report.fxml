@@ -11,6 +11,7 @@
 <?import javafx.scene.layout.Pane?>
 <?import javafx.scene.text.Font?>
 
+
 <Pane prefHeight="650.0" prefWidth="1043.0" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.rest_vision.controller.menu.Menu">
    <children>
       <AnchorPane prefHeight="650.0" prefWidth="1043.0">

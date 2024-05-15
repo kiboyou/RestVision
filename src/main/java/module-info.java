@@ -24,4 +24,7 @@ module com.example.rest_vision {
     opens com.example.rest_vision.controller.stock to javafx.fxml;
     exports com.example.rest_vision.controller.report;
     opens com.example.rest_vision.controller.report to javafx.fxml;
+
+    exports com.example.rest_vision.model.Gestion_Personnel;
+    opens com.example.rest_vision.model.Gestion_Personnel to javafx.fxml;
 }
