@@ -12,7 +12,7 @@
       <AnchorPane prefHeight="650.0" prefWidth="1043.0">
          <children>
             <AnchorPane layoutY="96.0" prefHeight="554.0" prefWidth="1043.0" />
-            <Button alignment="CENTER" layoutX="247.0" layoutY="20.0" onAction="#handlePage1Button" prefHeight="44.0" prefWidth="164.0" style="-fx-background-color: #ac6724; -fx-background-color: black;" text="Employes" textFill="WHITE" textOverrun="CLIP">
+            <Button alignment="CENTER" layoutX="247.0" layoutY="20.0" onAction="#handlePage1Button" prefHeight="44.0" prefWidth="164.0" text="Employes" textFill="#2f291e" textOverrun="CLIP">
                <effect>
                   <Bloom />
                </effect>
@@ -20,7 +20,7 @@
                   <Font name="System Bold" size="22.0" />
                </font>
             </Button>
-            <Button layoutX="449.0" layoutY="20.0" onAction="#handlePage2Button" prefHeight="44.0" prefWidth="164.0" style="-fx-background-color: #ac6724; -fx-background-color: black;" text="DemandesConge" textFill="WHITE">
+            <Button layoutX="449.0" layoutY="20.0" onAction="#handlePage2Button" prefHeight="44.0" prefWidth="164.0" text="DemandesConge" textFill="#2f291e">
                <effect>
                   <Bloom />
                </effect>
@@ -28,7 +28,7 @@
                   <Font name="System Bold" size="18.0" />
                </font>
             </Button>
-            <Button layoutX="649.0" layoutY="20.0" onAction="#handlePage3Button" prefHeight="44.0" prefWidth="164.0" style="-fx-background-color: #ac6724; -fx-background-color: black;" text="Roles" textFill="WHITE">
+            <Button layoutX="649.0" layoutY="20.0" onAction="#handlePage3Button" prefHeight="44.0" prefWidth="164.0" text="Roles" textFill="#2f291e">
                <effect>
                   <Bloom />
                </effect>
