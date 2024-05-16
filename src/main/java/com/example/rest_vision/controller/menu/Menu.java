@@ -126,7 +126,7 @@ public class Menu implements Initializable {
                     alert.setContentText("Menu cree avec succes!");
                     alert.showAndWait();
 
-//                    affichageMenu();
+                    affichageMenu();
 
                     effacerMenu();
                 }
@@ -162,12 +162,16 @@ public class Menu implements Initializable {
     }
 
     private ObservableList<MenuEntity> listMenu;
-//    public void affichageMenu(){
-//        listMenu = listeDesMenu();
-//
-//
-//        liste_menu.setItems(listMenu);
-//    }
+    public void affichageMenu(){
+        listMenu = listeDesMenu();
+        id_menu_col.setCellValueFactory(new PropertyValueFactory<>("menuId"));
+        nom_menu_col.setCellValueFactory(new PropertyValueFactory<>("nom"));
+        type_col.setCellValueFactory(new PropertyValueFactory<>("type"));
+        prix_col.setCellValueFactory(new PropertyValueFactory<>("prix"));
+        status_col.setCellValueFactory(new PropertyValueFactory<>("status"));
+
+        liste_menu.setItems(listMenu);
+    }
 
     public void editerMenu(){
         String sql = "UPDATE menu SET nom = '"
@@ -209,7 +213,7 @@ public class Menu implements Initializable {
                     statement = connect.createStatement();
                     statement.executeUpdate(sql);
 
-//                    affichageMenu();
+                    affichageMenu();
 
                     effacerMenu();
                 }else{
@@ -257,7 +261,7 @@ public class Menu implements Initializable {
                     statement = connect.createStatement();
                     statement.executeUpdate(sql);
 
-//                    affichageMenu();
+                    affichageMenu();
 
                     effacerMenu();
                 }else{
@@ -344,17 +348,17 @@ public class Menu implements Initializable {
     }
     @Override
     public void initialize(URL url, ResourceBundle resourceBundle) {
-        id_menu_col.setCellValueFactory(new PropertyValueFactory<>("menuId"));
-        nom_menu_col.setCellValueFactory(new PropertyValueFactory<>("nom"));
-        type_col.setCellValueFactory(new PropertyValueFactory<>("type"));
-        prix_col.setCellValueFactory(new PropertyValueFactory<>("prix"));
-        status_col.setCellValueFactory(new PropertyValueFactory<>("status"));
-        listMenu = listeDesMenu();
-        liste_menu.setItems(listMenu);
+//        id_menu_col.setCellValueFactory(new PropertyValueFactory<>("menuId"));
+//        nom_menu_col.setCellValueFactory(new PropertyValueFactory<>("nom"));
+//        type_col.setCellValueFactory(new PropertyValueFactory<>("type"));
+//        prix_col.setCellValueFactory(new PropertyValueFactory<>("prix"));
+//        status_col.setCellValueFactory(new PropertyValueFactory<>("status"));
+//        listMenu = listeDesMenu();
+//        liste_menu.setItems(listMenu);
 
         statusMenu();
         categorieMenu();
-//        affichageMenu();
+        affichageMenu();
         rechercherMenu();
     }
 }
