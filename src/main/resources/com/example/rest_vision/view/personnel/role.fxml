@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.Pane?>
+
+<Pane prefHeight="650.0" prefWidth="1043.0" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.rest_vision.controller.personnel.RoleController">
+    <children>
+        <TableView fx:id="RolessView" layoutX="215.0" layoutY="238.0" onMouseClicked="#getRoles" prefHeight="305.0" prefWidth="638.0">
+            <columns>
+                <TableColumn fx:id="idRoleseCol" prefWidth="119.0" text="RoleID" />
+                <TableColumn fx:id="nameRolese" minWidth="0.0" prefWidth="538.0" text="NomRole" />
+            </columns>
+        </TableView>
+        <Pane layoutX="63.0" layoutY="21.0" prefHeight="264.0" prefWidth="939.0" styleClass="card-reservation-login">
+            <children>
+                <TextField fx:id="nomField" layoutX="37.0" layoutY="74.0" prefHeight="55.0" prefWidth="425.0" promptText="Enter le role" />
+
+                <Button fx:id="addBtn" layoutX="539.0" layoutY="78.0" mnemonicParsing="false" onAction="#ajouterRolesAction" prefHeight="45.0" prefWidth="117.0" styleClass="add-btn-reservation" text="ADD" textAlignment="CENTER" />
+<!--                <Button fx:id="endBtn" contentDisplay="CENTER" layoutX="763.0" layoutY="97.0" mnemonicParsing="false" onAction="#modifierRolesAction" prefHeight="45.0" prefWidth="117.0" styleClass="confirm-btn-reservation" text="UPDATE" />-->
+                <Button fx:id="cancelBtn" layoutX="730.0" layoutY="78.0" mnemonicParsing="false" onAction="#supprimerRolesAction" prefHeight="45.0" prefWidth="117.0" styleClass="cancel-btn-reservation" text="DELETE" />
+            </children>
+        </Pane>
+    </children>
+</Pane>
