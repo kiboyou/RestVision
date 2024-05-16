@@ -346,7 +346,7 @@ public class Reservation implements Initializable {
     }
     @FXML
     void resetAll(ActionEvent event) {
-        /*clear();*/
+        clear();
         /*System.out.println("Clear");*/
     }
     public void fillComboNumplace(){

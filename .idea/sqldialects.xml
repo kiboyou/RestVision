@@ -2,5 +2,7 @@
 <project version="4">
   <component name="SqlDialectMappings">
     <file url="file://$PROJECT_DIR$/src/main/java/com/example/rest_vision/controller/reservation/Reservation.java" dialect="GenericSQL" />
+    <file url="file://$PROJECT_DIR$/src/main/resources/com/example/rest_vision/public/dossierScriptSQL/gestion_reservation.sql" dialect="MySQL" />
+    <file url="file://$PROJECT_DIR$/src/main/resources/com/example/rest_vision/public/dossierScriptSQL/schema_gestion_menu_commande.sql" dialect="MySQL" />
   </component>
 </project>

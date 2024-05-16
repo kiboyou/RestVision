@@ -39,10 +39,10 @@ CREATE TABLE `places` (
 --
 
 INSERT INTO `places` (`idplace`, `numperson`, `numtable`) VALUES
-(2, 4, 2),
-(3, 3, 2),
-(4, 2, 2),
-(5, 1, 2);
+(1, 4, 2),
+(2, 3, 2),
+(3, 2, 2),
+(4, 1, 2);
 
 --
 -- Triggers `places`
@@ -82,11 +82,11 @@ CREATE TABLE `reservations` (
 --
 
 INSERT INTO `reservations` (`idreservation`, `firstname`, `lastname`, `phone`, `datecheckin`, `timecheckin`, `timecheckout`, `numperson`, `datereservation`, `statutreservation`) VALUES
-(2, 'Acobe', 'BONI', '53117212', '2024-05-08', '11h30', '12:30', 3, '2024-05-12 01:28:01', 'Confirmée'),
-(3, 'Mohamed', 'Kiboyou', '48281052', '2024-05-14', '11:30', '12:30', 2, '2024-05-12 18:44:32', 'Terminée'),
-(4, 'Fanny', 'Faga', '53117212', '2024-05-06', '11:30', '12:30', 4, '2024-05-12 18:46:24', 'Annulée'),
-(5, 'Christian', 'Ahikpa', '53117212', '2024-05-14', '17:00', '18:00', 2, '2024-05-12 18:47:10', 'Terminée'),
-(6, 'BILONG ', 'Emmanuel', '53127212', '2024-05-13', '11:30', '12:30', 1, '2024-05-13 09:25:45', 'Terminée');
+(1, 'Acobe', 'BONI', '53117212', '2024-05-08', '11:30', '12:30', 3, '2024-05-12 01:28:01', 'Confirmée'),
+(2, 'Mohamed', 'Kiboyou', '48281052', '2024-05-14', '11:30', '12:30', 2, '2024-05-12 18:44:32', 'Terminée'),
+(3, 'Fanny', 'Faga', '53117212', '2024-05-06', '11:30', '12:30', 4, '2024-05-12 18:46:24', 'Annulée'),
+(4, 'Christian', 'Ahikpa', '53117212', '2024-05-14', '17:00', '18:00', 2, '2024-05-12 18:47:10', 'Terminée'),
+(5, 'BILONG ', 'Emmanuel', '53127212', '2024-05-13', '11:30', '12:30', 1, '2024-05-13 09:25:45', 'Terminée');
 
 --
 -- Triggers `reservations`
@@ -191,7 +191,7 @@ ALTER TABLE `places`
 -- AUTO_INCREMENT for table `reservations`
 --
 ALTER TABLE `reservations`
-  MODIFY `idreservation` int NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=7;
+  MODIFY `idreservation` int NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=6;
 
 --
 -- AUTO_INCREMENT for table `users`

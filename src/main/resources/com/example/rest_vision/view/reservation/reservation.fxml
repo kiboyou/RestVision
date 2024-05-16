@@ -37,14 +37,14 @@
             <TextField fx:id="lastnameIn" layoutX="64.0" layoutY="33.0" prefHeight="34.0" prefWidth="221.0" promptText="Enter lastname" />
             <TextField fx:id="firstnameIn" layoutX="326.0" layoutY="33.0" prefHeight="34.0" prefWidth="242.0" promptText="Enter firstname" />
             <TextField fx:id="phoneIn" layoutX="63.0" layoutY="172.0" prefHeight="34.0" prefWidth="226.0" promptText="Enter mobile phone" />
-            <Button fx:id="addBtn" layoutX="65.0" layoutY="225.0" mnemonicParsing="false" onAction="#addReservation" prefHeight="45.0" prefWidth="117.0" styleClass="add-btn-reservation" stylesheets="@../public/css/style.css" text="ADD" textAlignment="CENTER" />
-            <Button fx:id="endBtn" contentDisplay="CENTER" layoutX="197.0" layoutY="224.0" mnemonicParsing="false" onAction="#endReservation" prefHeight="45.0" prefWidth="117.0" styleClass="confirm-btn-reservation" stylesheets="@../public/css/style.css" text="FINISH" />
-            <Button fx:id="cancelBtn" layoutX="329.0" layoutY="224.0" mnemonicParsing="false" onAction="#cancelReservation" prefHeight="45.0" prefWidth="117.0" styleClass="cancel-btn-reservation" stylesheets="@../public/css/style.css" text="CANCEL" />
+            <Button fx:id="addBtn" layoutX="65.0" layoutY="225.0" mnemonicParsing="false" onAction="#addReservation" prefHeight="45.0" prefWidth="117.0" styleClass="add-btn-reservation" stylesheets="@../public/css/style.css" text="AJOUTER" textAlignment="CENTER" textFill="WHITE" />
+            <Button fx:id="endBtn" contentDisplay="CENTER" layoutX="197.0" layoutY="224.0" mnemonicParsing="false" onAction="#endReservation" prefHeight="45.0" prefWidth="117.0" styleClass="confirm-btn-reservation" stylesheets="@../public/css/style.css" text="TERMINER" textFill="WHITE" />
+            <Button fx:id="cancelBtn" layoutX="329.0" layoutY="224.0" mnemonicParsing="false" onAction="#cancelReservation" prefHeight="45.0" prefWidth="117.0" styleClass="cancel-btn-reservation" stylesheets="@../public/css/style.css" text="ANNULER" textFill="WHITE" />
             <DatePicker fx:id="datecheckin" layoutX="64.0" layoutY="101.0" prefHeight="34.0" prefWidth="127.0" promptText="choose date" />
             <ComboBox fx:id="peopleIn" layoutX="327.0" layoutY="172.0" prefHeight="34.0" prefWidth="242.0" promptText="People's number" />
-            <Button fx:id="cancelBtn1" layoutX="459.0" layoutY="224.0" mnemonicParsing="false" onAction="#resetAll" prefHeight="45.0" prefWidth="117.0" styleClass="add-btn-reservation" stylesheets="@../public/css/style.css" text="RESET" />
-            <TextField fx:id="timecheckin" layoutX="206.0" layoutY="102.0" prefHeight="34.0" prefWidth="170.0" promptText="timeIN: 11h30" />
-            <TextField fx:id="timecheckout" layoutX="398.0" layoutY="102.0" prefHeight="34.0" prefWidth="170.0" promptText="timeOUT: 12h30" />
+            <Button fx:id="cancelBtn1" layoutX="459.0" layoutY="224.0" mnemonicParsing="false" onAction="#resetAll" prefHeight="45.0" prefWidth="117.0" styleClass="add-btn-reservation" stylesheets="@../public/css/style.css" text="REINITIALISER" textFill="WHITE" />
+            <TextField fx:id="timecheckin" layoutX="206.0" layoutY="102.0" prefHeight="34.0" prefWidth="170.0" promptText="timeIN: 11:30" />
+            <TextField fx:id="timecheckout" layoutX="398.0" layoutY="102.0" prefHeight="34.0" prefWidth="170.0" promptText="timeOUT: 12:30" />
          </children>
       </Pane>
       <Text layoutX="698.0" layoutY="84.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Places available">
