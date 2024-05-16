@@ -1,5 +1,7 @@
 package com.example.rest_vision.controller.dashboard;
 
+import com.example.rest_vision.controller.commande.Commande;
+import com.example.rest_vision.controller.menu.Menu;
 import com.example.rest_vision.model.Data;
 import com.jfoenix.controls.JFXButton;
 import javafx.collections.FXCollections;
@@ -107,6 +109,8 @@ public class DashboardController implements Initializable {
             throw new RuntimeException(e);
         }
         displayUserName();
+//        Commande commande1 = new Commande();
+//        commande1.quantiteSpinner();
 //        logout();
     }
     @FXML
@@ -120,12 +124,17 @@ public class DashboardController implements Initializable {
         Parent fxml = FXMLLoader.load(getClass().getResource("/com/example/rest_vision/view/commande/commande.fxml"));
         contentArea.getChildren().clear();
         contentArea.getChildren().add(fxml);
+//        Commande commande1 = new Commande();
+//        commande1.quantiteSpinner();
     }
     @FXML
     public void menu(ActionEvent event) throws IOException{
         Parent fxml = FXMLLoader.load(getClass().getResource("/com/example/rest_vision/view/menu/menu.fxml"));
         contentArea.getChildren().clear();
         contentArea.getChildren().add(fxml);
+//        Menu menu1 = new Menu();
+////        menu1.affichageMenu();
+//        menu1.rechercherMenu();
     }
     @FXML
     public void personnel(ActionEvent event) throws IOException{
