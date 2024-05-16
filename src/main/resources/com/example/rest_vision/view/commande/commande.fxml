@@ -20,9 +20,9 @@
    <children>
       <AnchorPane layoutX="14.0" layoutY="12.0" prefHeight="627.0" prefWidth="664.0" style="-fx-background-color: #fff;">
          <children>
-            <TableView fx:id="liste_commande" layoutX="4.0" layoutY="5.0" prefHeight="618.0" prefWidth="656.0">
+            <TableView fx:id="liste_commande" layoutX="4.0" layoutY="5.0" onMouseClicked="#selectionDonneCommande" prefHeight="618.0" prefWidth="656.0">
               <columns>
-                <TableColumn fx:id="id_menu_col" prefWidth="65.0" text="ID MENU" />
+                <TableColumn fx:id="id_commande_menu_col" prefWidth="65.0" text="ID MENU" />
                 <TableColumn fx:id="nom_menu_col" prefWidth="158.0" text="NOM MENU" />
                   <TableColumn fx:id="type_col" prefWidth="108.0" text="TYPE" />
                   <TableColumn fx:id="prix_col" prefWidth="170.0" text="PRIX (dt)" />
@@ -38,20 +38,20 @@
                   <Font size="14.0" />
                </font>
             </Label>
-            <ComboBox fx:id="id_menu_commande" layoutX="101.0" layoutY="46.0" prefHeight="25.0" prefWidth="217.0" promptText="Choisir..." />
+            <ComboBox fx:id="id_menu_commande" layoutX="101.0" layoutY="46.0" onMouseClicked="#idMenuCommande" prefHeight="25.0" prefWidth="217.0" promptText="Choisir..." />
             <Label layoutX="7.0" layoutY="81.0" prefHeight="25.0" prefWidth="79.0" text="Nom Menu:">
                <font>
                   <Font size="14.0" />
                </font>
             </Label>
-            <ComboBox fx:id="nom_menu_commande" layoutX="100.0" layoutY="81.0" prefHeight="25.0" prefWidth="217.0" promptText="Choisir..." />
+            <ComboBox fx:id="nom_menu_commande" layoutX="100.0" layoutY="81.0" onMouseClicked="#nomMenuCommande" prefHeight="25.0" prefWidth="217.0" promptText="Choisir..." />
             <Label layoutX="26.0" layoutY="117.0" prefHeight="25.0" prefWidth="68.0" text="Quantite:">
                <font>
                   <Font size="14.0" />
                </font>
             </Label>
-            <Spinner fx:id="qte_commande" layoutX="101.0" layoutY="117.0" />
-            <Button fx:id="btn_ajouter_commande" layoutX="101.0" layoutY="166.0" mnemonicParsing="false" prefHeight="25.0" prefWidth="149.0" text="Ajouter" />
+            <Spinner fx:id="qte_commande" layoutX="101.0" layoutY="117.0" onMouseClicked="#quantiteCommande" />
+            <Button fx:id="btn_ajouter_commande" layoutX="101.0" layoutY="166.0" mnemonicParsing="false" onAction="#ajouterCommande" prefHeight="25.0" prefWidth="149.0" text="Ajouter" />
             <Separator layoutX="37.0" layoutY="233.0" prefHeight="0.0" prefWidth="281.0" />
             <Label layoutX="26.0" layoutY="289.0" prefHeight="25.0" prefWidth="88.0" text="Total a payer:">
                <font>
@@ -68,10 +68,20 @@
                   <Font size="14.0" />
                </font>
             </Label>
-            <TextField fx:id="montant_paye" layoutX="90.0" layoutY="334.0" prefHeight="25.0" prefWidth="217.0" text="0.0" />
-            <Button fx:id="btn_payer_commande" layoutX="85.0" layoutY="403.0" mnemonicParsing="false" prefHeight="25.0" prefWidth="79.0" text="Payer" />
+            <TextField fx:id="montant_commande" layoutX="90.0" layoutY="334.0" onAction="#montantCommande" prefHeight="25.0" prefWidth="217.0" promptText="0.0" />
+            <Label layoutX="28.0" layoutY="368.0" prefHeight="25.0" prefWidth="59.0" text="Reste:">
+               <font>
+                  <Font size="14.0" />
+               </font>
+            </Label>
+            <Label fx:id="reste" layoutX="92.0" layoutY="370.0" prefHeight="25.0" prefWidth="88.0" text="0.0">
+               <font>
+                  <Font size="14.0" />
+               </font>
+            </Label>
+            <Button fx:id="btn_payer_commande" layoutX="85.0" layoutY="403.0" mnemonicParsing="false" onAction="#payerCommande" prefHeight="25.0" prefWidth="79.0" text="Payer" />
             <Button fx:id="btn_imprimer_recu" layoutX="226.0" layoutY="403.0" mnemonicParsing="false" prefHeight="25.0" prefWidth="79.0" text="Reçu" />
-            <Button fx:id="btn_annuler" layoutX="85.0" layoutY="446.0" mnemonicParsing="false" prefHeight="25.0" prefWidth="79.0" text="Annuler" />
+            <Button fx:id="btn_annuler" layoutX="85.0" layoutY="446.0" mnemonicParsing="false" onAction="#supprimerCommande" prefHeight="25.0" prefWidth="79.0" text="Supprimer" />
          </children>
       </AnchorPane>
    </children>

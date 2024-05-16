@@ -281,13 +281,12 @@ public class Menu implements Initializable {
         FilteredList<MenuEntity> filter = new FilteredList<>(listMenu, e -> true);
 
         recherche_menu.textProperty().addListener((observable, oldValue, newValue) -> {
+            String searchKey = newValue.toLowerCase().trim();
             System.out.println("Texte de recherche modifié : " + newValue);
             filter.setPredicate(menuEntity -> {
-                if (newValue == null || newValue.isEmpty()) {
+                if (newValue.isEmpty()) {
                     return true; // Afficher tous les éléments si le champ de recherche est vide
                 }
-
-                String searchKey = newValue.toLowerCase();
 
                 // Vérifier si le menu correspond au critère de recherche
                 return menuEntity.getMenuId().toLowerCase().contains(searchKey)
@@ -301,12 +300,10 @@ public class Menu implements Initializable {
         // Créer une liste triée à partir du filtre
         SortedList<MenuEntity> sortedList = new SortedList<>(filter);
         sortedList.comparatorProperty().bind(liste_menu.comparatorProperty());
-        for (MenuEntity date: sortedList) {
-            System.out.println(date.getPrix());
-            System.out.println(date.getMenuId());
-        }
+
         // Mettre à jour la liste affichée dans votre contrôle de liste (liste_menu)
         liste_menu.setItems(sortedList);
+        liste_menu.refresh();
     }
 
     public void selectionnerUnMenu(){
