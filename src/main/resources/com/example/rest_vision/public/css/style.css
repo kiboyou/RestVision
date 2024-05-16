@@ -27,7 +27,19 @@
 }
 .textfield:focused{
     -fx-border-width: 1px;
+}
 
+.card-reservation-login{
+    -fx-background-color: gray;
+}
+.add-btn-reservation{
+    -fx-background-color: orange;
+}
+.confirm-btn-reservation{
+    -fx-background-color: green;
+}
+.cancel-btn-reservation{
+    -fx-background-color: red;
 }
 
 .create-btn{
