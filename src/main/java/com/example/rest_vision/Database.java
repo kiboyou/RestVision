@@ -9,7 +9,7 @@ public class Database {
     public static Connection connectDd(){
         try{
             Class.forName("com.mysql.cj.jdbc.Driver");
-            return DriverManager.getConnection("jdbc:mysql://localhost/rest_vision","root","");
+            return DriverManager.getConnection("jdbc:mysql://localhost/rest_vision","root","Eren@2806");
         } catch (Exception e){
             e.printStackTrace();
         }
