@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.Separator?>
+<?import javafx.scene.control.Spinner?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.text.Font?>
+
+<Pane prefHeight="650.0" prefWidth="1043.0" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.rest_vision.controller.commande.Commande">
+   <padding>
+      <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
+   </padding>
+   <children>
+      <AnchorPane layoutX="14.0" layoutY="12.0" prefHeight="627.0" prefWidth="664.0" style="-fx-background-color: #fff;">
+         <children>
+            <TableView fx:id="liste_commande" layoutX="4.0" layoutY="5.0" prefHeight="618.0" prefWidth="656.0">
+              <columns>
+                <TableColumn fx:id="id_menu_col" prefWidth="65.0" text="ID MENU" />
+                <TableColumn fx:id="nom_menu_col" prefWidth="158.0" text="NOM MENU" />
+                  <TableColumn fx:id="type_col" prefWidth="108.0" text="TYPE" />
+                  <TableColumn fx:id="prix_col" prefWidth="170.0" text="PRIX (dt)" />
+                  <TableColumn fx:id="qte_col" prefWidth="171.0" text="QUANTITE" />
+              </columns>
+            </TableView>
+         </children>
+      </AnchorPane>
+      <AnchorPane layoutX="683.0" layoutY="12.0" prefHeight="627.0" prefWidth="334.0" style="-fx-background-color: #fff;">
+         <children>
+            <Label layoutX="23.0" layoutY="46.0" prefHeight="25.0" prefWidth="68.0" text="ID Menu:">
+               <font>
+                  <Font size="14.0" />
+               </font>
+            </Label>
+            <ComboBox fx:id="id_menu_commande" layoutX="101.0" layoutY="46.0" prefHeight="25.0" prefWidth="217.0" promptText="Choisir..." />
+            <Label layoutX="7.0" layoutY="81.0" prefHeight="25.0" prefWidth="79.0" text="Nom Menu:">
+               <font>
+                  <Font size="14.0" />
+               </font>
+            </Label>
+            <ComboBox fx:id="nom_menu_commande" layoutX="100.0" layoutY="81.0" prefHeight="25.0" prefWidth="217.0" promptText="Choisir..." />
+            <Label layoutX="26.0" layoutY="117.0" prefHeight="25.0" prefWidth="68.0" text="Quantite:">
+               <font>
+                  <Font size="14.0" />
+               </font>
+            </Label>
+            <Spinner fx:id="qte_commande" layoutX="101.0" layoutY="117.0" />
+            <Button fx:id="btn_ajouter_commande" layoutX="101.0" layoutY="166.0" mnemonicParsing="false" prefHeight="25.0" prefWidth="149.0" text="Ajouter" />
+            <Separator layoutX="37.0" layoutY="233.0" prefHeight="0.0" prefWidth="281.0" />
+            <Label layoutX="26.0" layoutY="289.0" prefHeight="25.0" prefWidth="88.0" text="Total a payer:">
+               <font>
+                  <Font size="14.0" />
+               </font>
+            </Label>
+            <Label fx:id="total_commande" layoutX="121.0" layoutY="291.0" prefHeight="25.0" prefWidth="88.0" text="0.0">
+               <font>
+                  <Font size="14.0" />
+               </font>
+            </Label>
+            <Label layoutX="27.0" layoutY="332.0" prefHeight="25.0" prefWidth="68.0" text="Montant:">
+               <font>
+                  <Font size="14.0" />
+               </font>
+            </Label>
+            <TextField fx:id="montant_paye" layoutX="90.0" layoutY="334.0" prefHeight="25.0" prefWidth="217.0" text="0.0" />
+            <Button fx:id="btn_payer_commande" layoutX="85.0" layoutY="403.0" mnemonicParsing="false" prefHeight="25.0" prefWidth="79.0" text="Payer" />
+            <Button fx:id="btn_imprimer_recu" layoutX="226.0" layoutY="403.0" mnemonicParsing="false" prefHeight="25.0" prefWidth="79.0" text="Reçu" />
+            <Button fx:id="btn_annuler" layoutX="85.0" layoutY="446.0" mnemonicParsing="false" prefHeight="25.0" prefWidth="79.0" text="Annuler" />
+         </children>
+      </AnchorPane>
+   </children>
+</Pane>

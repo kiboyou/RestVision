@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.text.Font?>
+
+<Pane prefHeight="695.0" prefWidth="1205.0" style="-fx-background-color: #F6A347;" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.rest_vision.controller.stock.Stock">
+   <children>
+      <Label layoutX="368.0" layoutY="-63.0" prefHeight="190.0" prefWidth="308.0" text="GESTION DU STOCK" textAlignment="CENTER" textFill="WHITE">
+         <font>
+            <Font name="System Bold" size="32.0" />
+         </font>
+      </Label>
+      <Pane layoutX="3.0" layoutY="128.0" prefHeight="373.0" prefWidth="326.0" style="-fx-background-color: lightyellow;">
+         <children>
+            <Label layoutX="14.0" layoutY="12.0" text="Nom du produit:">
+               <font>
+                  <Font size="18.0" />
+               </font>
+            </Label>
+            <Label layoutX="112.0" layoutY="98.0" text="Prix:">
+               <font>
+                  <Font size="18.0" />
+               </font>
+            </Label>
+            <Label layoutX="52.0" layoutY="55.0" text="Description:">
+               <font>
+                  <Font size="18.0" />
+               </font>
+            </Label>
+            <Label layoutX="73.0" layoutY="139.0" text="Quantité:">
+               <font>
+                  <Font size="18.0" />
+               </font>
+            </Label>
+            <Label layoutX="9.0" layoutY="179.0" text="Nom fournisseur:  ">
+               <font>
+                  <Font size="18.0" />
+               </font>
+            </Label>
+            <Label layoutX="6.0" layoutY="222.0" text="               Adresse:  ">
+               <font>
+                  <Font size="18.0" />
+               </font>
+            </Label>
+            <Label layoutX="11.0" layoutY="267.0" text="                    Ville:  ">
+               <font>
+                  <Font size="18.0" />
+               </font>
+            </Label>
+            <Label layoutX="-37.0" layoutY="309.0" text="                    Telephone:  ">
+               <font>
+                  <Font size="18.0" />
+               </font>
+            </Label>
+            <TextField fx:id="txtProduit_Nom" layoutX="159.0" layoutY="13.0" />
+            <TextField fx:id="txtPrix" layoutX="159.0" layoutY="99.0" />
+            <TextField fx:id="txtDescription" layoutX="159.0" layoutY="57.0" />
+            <TextField fx:id="txtQuantite" layoutX="160.0" layoutY="142.0" />
+            <TextField fx:id="txtFournisseur" layoutX="160.0" layoutY="180.0" />
+            <TextField fx:id="txtAdresse" layoutX="161.0" layoutY="223.0" />
+            <TextField fx:id="txtVille" layoutX="161.0" layoutY="268.0" />
+            <TextField fx:id="txtTelephone" layoutX="162.0" layoutY="311.0" />
+         </children>
+      </Pane>
+      <TableView fx:id="table" layoutX="331.0" layoutY="125.0" prefHeight="445.0" prefWidth="660.0" onMouseClicked="#getStock">
+        <columns>
+          <TableColumn fx:id="produit_nom" prefWidth="112.0" text="produit_nom" />
+            <TableColumn fx:id="description" prefWidth="75.0" text="description" />
+            <TableColumn fx:id="prix" prefWidth="75.0" text="prix" />
+            <TableColumn fx:id="quantite" prefWidth="75.0" text="quantite" />
+            <TableColumn fx:id="fournisseur_nom" prefWidth="106.0" text="fournisseur_nom" />
+            <TableColumn fx:id="adresse" prefWidth="75.0" text="adresse" />
+            <TableColumn fx:id="ville" prefWidth="70.0" text="ville" />
+            <TableColumn fx:id="telephone" prefWidth="69.0" text="telephone" />
+        </columns>
+      </TableView>
+      <Button fx:id="btnAdd" layoutX="3.0" layoutY="504.0" mnemonicParsing="false" prefHeight="27.0" prefWidth="106.0" style="-fx-background-color: #7fc844;" text="Ajouter " textFill="WHITE"  onMouseClicked="#ajouterStockAction">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </Button>
+      <Button fx:id="btnUpdate" layoutX="110.0" layoutY="503.0" mnemonicParsing="false" prefHeight="27.0" prefWidth="106.0" style="-fx-background-color: #23a3c7;" text="Modifier " textFill="WHITE">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </Button>
+      <Button fx:id="btnDelete" layoutX="217.0" layoutY="503.0" mnemonicParsing="false" prefHeight="39.0" prefWidth="114.0" style="-fx-background-color: red;" text="Supprimer" textFill="WHITE" onMouseClicked="#supprimerStockAction">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </Button>
+   </children>
+</Pane>

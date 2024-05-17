@@ -1,0 +1,109 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.PasswordField?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.StackPane?>
+<?import javafx.scene.text.Font?>
+
+<StackPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.rest_vision.controller.login.LoginController">
+   <children>
+      <AnchorPane prefHeight="200.0" prefWidth="200.0">
+         <children>
+            <AnchorPane fx:id="loginForm" layoutX="300.0" prefHeight="400.0" prefWidth="300.0" styleClass="white-form" stylesheets="@../../public/css/style.css">
+               <children>
+                  <Label contentDisplay="CENTER" layoutX="14.0" layoutY="41.0" prefHeight="39.0" prefWidth="201.0" styleClass="head-label" stylesheets="@../../public/css/style.css" text="Connexion" textFill="#f6a347">
+                     <font>
+                        <Font size="24.0" />
+                     </font>
+                  </Label>
+                  <TextField fx:id="login" layoutX="27.0" layoutY="153.0" prefHeight="30.0" prefWidth="220.0" promptText="Login" styleClass="textfield" stylesheets="@../../public/css/style.css">
+                     <font>
+                        <Font size="15.0" />
+                     </font>
+                  </TextField>
+                  <PasswordField fx:id="password" layoutX="27.0" layoutY="205.0" prefHeight="30.0" prefWidth="220.0" promptText="Mot de passe" styleClass="textfield" stylesheets="@../../public/css/style.css">
+                     <font>
+                        <Font size="15.0" />
+                     </font>
+                  </PasswordField>
+                  <JFXButton fx:id="loginBtn" layoutX="27.0" layoutY="270.0" onAction="#login" prefHeight="35.0" prefWidth="220.0" styleClass="login-btn" stylesheets="@../../public/css/style.css" text="Se connecter" textFill="WHITE">
+                     <font>
+                        <Font size="18.0" />
+                     </font>
+                  </JFXButton>
+                  <Label fx:id="close" alignment="CENTER" contentDisplay="CENTER" layoutX="258.0" prefHeight="30.0" prefWidth="42.0" styleClass="close-btn" stylesheets="@../../public/css/style.css" text="X" textFill="#dddddd">
+                     <font>
+                        <Font size="22.0" />
+                     </font>
+                  </Label>
+               </children>
+            </AnchorPane>
+            <AnchorPane fx:id="createForm" prefHeight="400.0" prefWidth="300.0" styleClass="white-form" stylesheets="@../../public/css/style.css">
+               <children>
+                  <Label contentDisplay="CENTER" layoutX="14.0" layoutY="41.0" prefHeight="39.0" prefWidth="220.0" styleClass="head-label" stylesheets="@../../public/css/style.css" text="Creation du compte" textFill="#f6a347">
+                     <font>
+                        <Font size="24.0" />
+                     </font>
+                  </Label>
+                  <TextField fx:id="loginCreate" layoutX="27.0" layoutY="132.0" prefHeight="30.0" prefWidth="220.0" promptText="Login" styleClass="textfield" stylesheets="@../../public/css/style.css">
+                     <font>
+                        <Font size="15.0" />
+                     </font>
+                  </TextField>
+                  <PasswordField fx:id="passwordCreate" layoutX="27.0" layoutY="176.0" prefHeight="30.0" prefWidth="220.0" promptText="Mot de passe" styleClass="textfield" stylesheets="@../../public/css/style.css">
+                     <font>
+                        <Font size="15.0" />
+                     </font>
+                  </PasswordField>
+                  <JFXButton fx:id="createBtn" layoutX="27.0" layoutY="318.0" prefHeight="35.0" prefWidth="220.0" styleClass="login-btn" stylesheets="@../../public/css/style.css" text="Enregistrer" textFill="WHITE">
+                     <font>
+                        <Font size="18.0" />
+                     </font>
+                  </JFXButton>
+                  <ComboBox fx:id="question" layoutX="27.0" layoutY="218.0" prefHeight="30.0" prefWidth="220.0" promptText="Question secrete" styleClass="textfield" stylesheets="@../../public/css/style.css" />
+                  <TextField fx:id="answer" layoutX="27.0" layoutY="258.0" prefHeight="30.0" prefWidth="220.0" promptText="Reponse" styleClass="textfield" stylesheets="@../../public/css/style.css">
+                     <font>
+                        <Font size="15.0" />
+                     </font>
+                  </TextField>
+               </children>
+            </AnchorPane>
+            <AnchorPane fx:id="sideForm" prefHeight="400.0" prefWidth="300.0" styleClass="gradient" stylesheets="@../../public/css/style.css">
+               <children>
+                  <ImageView fitHeight="121.0" fitWidth="128.0" layoutX="90.0" layoutY="53.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../../public/img/utils/icon-5.png" />
+                     </image>
+                  </ImageView>
+                  <Label alignment="TOP_CENTER" contentDisplay="CENTER" layoutX="30.0" layoutY="189.0" prefHeight="23.0" prefWidth="241.0" text="Application de gestion de restaurant" textAlignment="CENTER" textFill="WHITE">
+                     <font>
+                        <Font name="System Bold" size="13.0" />
+                     </font>
+                  </Label>
+                  <Label alignment="TOP_CENTER" contentDisplay="CENTER" layoutX="44.0" layoutY="294.0" prefHeight="39.0" prefWidth="213.0" styleClass="head-label" stylesheets="@../../public/css/style.css" text="Creer un compte" textFill="WHITE">
+                     <font>
+                        <Font size="24.0" />
+                     </font>
+                  </Label>
+                  <JFXButton fx:id="sideCreateBtn" layoutX="50.0" layoutY="346.0" onAction="#switchForm" prefHeight="40.0" prefWidth="200.0" styleClass="create-btn" stylesheets="@../../public/css/style.css" text="Creer un nouveau compte" textFill="WHITE">
+                     <font>
+                        <Font size="14.0" />
+                     </font>
+                  </JFXButton>
+                  <JFXButton fx:id="switchBtn" layoutX="50.0" layoutY="346.0" onAction="#switchForm" prefHeight="40.0" prefWidth="200.0" styleClass="create-btn" stylesheets="@../../public/css/style.css" text="Vous avez deja un compte?" textFill="WHITE" visible="false">
+                     <font>
+                        <Font size="14.0" />
+                     </font>
+                  </JFXButton>
+               </children>
+            </AnchorPane>
+         </children>
+      </AnchorPane>
+   </children>
+</StackPane>

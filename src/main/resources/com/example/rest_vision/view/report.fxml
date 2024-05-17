@@ -1,0 +1,141 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.chart.BarChart?>
+<?import javafx.scene.chart.CategoryAxis?>
+<?import javafx.scene.chart.NumberAxis?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.text.Font?>
+
+<Pane prefHeight="650.0" prefWidth="1043.0" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.rest_vision.controller.menu.Menu">
+   <children>
+      <AnchorPane prefHeight="650.0" prefWidth="1043.0">
+         <children>
+            <AnchorPane layoutX="-1.0" layoutY="14.0" prefHeight="168.0" prefWidth="1058.0">
+               <children>
+                  <AnchorPane layoutX="50.0" layoutY="12.0" prefHeight="144.0" prefWidth="225.0" style="-fx-background-color: #fff;">
+                     <padding>
+                        <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
+                     </padding>
+                     <children>
+                        <ImageView fitHeight="81.0" fitWidth="67.0" layoutX="14.0" layoutY="30.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@../public/img/utils/clients.png" />
+                           </image>
+                        </ImageView>
+                        <Label alignment="CENTER_RIGHT" layoutX="81.0" layoutY="99.0" prefHeight="28.0" prefWidth="146.0" text="Nombre total de Clients" textFill="#ac6724">
+                           <font>
+                              <Font name="System Bold" size="12.0" />
+                           </font>
+                        </Label>
+                        <Label alignment="TOP_RIGHT" contentDisplay="RIGHT" layoutX="89.0" layoutY="23.0" prefHeight="28.0" prefWidth="136.0" text="0" textAlignment="RIGHT" textFill="#ac6724">
+                           <font>
+                              <Font name="System Bold" size="22.0" />
+                           </font>
+                        </Label>
+                     </children>
+                  </AnchorPane>
+                  <AnchorPane layoutX="297.0" layoutY="13.0" prefHeight="144.0" prefWidth="217.0" style="-fx-background-color: #fff;">
+                     <padding>
+                        <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
+                     </padding>
+                     <children>
+                        <ImageView fitHeight="81.0" fitWidth="67.0" layoutX="14.0" layoutY="33.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@../public/img/utils/recette%20jour.png" />
+                           </image>
+                        </ImageView>
+                        <Label alignment="CENTER_RIGHT" layoutX="74.0" layoutY="102.0" prefHeight="28.0" prefWidth="146.0" text="Recette Journaliere" textFill="#ac6724">
+                           <font>
+                              <Font name="System Bold" size="12.0" />
+                           </font>
+                        </Label>
+                        <Label alignment="TOP_RIGHT" contentDisplay="RIGHT" layoutX="82.0" layoutY="26.0" prefHeight="28.0" prefWidth="136.0" text="0" textAlignment="RIGHT" textFill="#ac6724">
+                           <font>
+                              <Font name="System Bold" size="22.0" />
+                           </font>
+                        </Label>
+                     </children>
+                  </AnchorPane>
+                  <AnchorPane layoutX="536.0" layoutY="13.0" prefHeight="144.0" prefWidth="201.0" style="-fx-background-color: #fff;">
+                     <padding>
+                        <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
+                     </padding>
+                     <children>
+                        <ImageView fitHeight="81.0" fitWidth="67.0" layoutX="7.0" layoutY="33.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@../public/img/utils/money.png" />
+                           </image>
+                        </ImageView>
+                        <Label alignment="CENTER_RIGHT" layoutX="72.0" layoutY="102.0" prefHeight="28.0" prefWidth="146.0" text="Total des ventes" textFill="#ac6724">
+                           <font>
+                              <Font name="System Bold" size="12.0" />
+                           </font>
+                        </Label>
+                        <Label alignment="TOP_RIGHT" contentDisplay="RIGHT" layoutX="82.0" layoutY="26.0" prefHeight="28.0" prefWidth="136.0" text="0" textAlignment="RIGHT" textFill="#ac6724">
+                           <font>
+                              <Font name="System Bold" size="22.0" />
+                           </font>
+                        </Label>
+                     </children>
+                  </AnchorPane>
+                  <AnchorPane layoutX="774.0" layoutY="14.0" prefHeight="141.0" prefWidth="208.0" style="-fx-background-color: #fff;">
+                     <padding>
+                        <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
+                     </padding>
+                     <children>
+                        <ImageView fitHeight="81.0" fitWidth="67.0" layoutX="8.0" layoutY="38.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@../public/img/utils/order.png" />
+                           </image>
+                        </ImageView>
+                        <Label alignment="CENTER_RIGHT" layoutX="65.0" layoutY="105.0" prefHeight="28.0" prefWidth="146.0" text="Total des commandes" textFill="#ac6724">
+                           <font>
+                              <Font name="System Bold" size="12.0" />
+                           </font>
+                        </Label>
+                        <Label alignment="TOP_RIGHT" contentDisplay="RIGHT" layoutX="79.0" layoutY="33.0" prefHeight="32.0" prefWidth="124.0" text="0" textAlignment="RIGHT" textFill="#ac6724">
+                           <font>
+                              <Font name="System Bold" size="22.0" />
+                           </font>
+                        </Label>
+                     </children>
+                  </AnchorPane>
+               </children>
+            </AnchorPane>
+            <AnchorPane layoutX="47.0" layoutY="189.0" prefHeight="456.0" prefWidth="947.0" style="-fx-background-color: white;">
+               <children>
+                  <AnchorPane layoutX="11.0" layoutY="33.0" prefHeight="402.0" prefWidth="423.0">
+                     <children>
+                        <BarChart layoutX="17.0" layoutY="18.0" prefHeight="372.0" prefWidth="423.0" title="Diagramme 1">
+                          <xAxis>
+                            <CategoryAxis side="BOTTOM" />
+                          </xAxis>
+                          <yAxis>
+                            <NumberAxis side="LEFT" />
+                          </yAxis>
+                        </BarChart>
+                     </children>
+                  </AnchorPane>
+                  <AnchorPane layoutX="465.0" layoutY="50.0" prefHeight="395.0" prefWidth="459.0">
+                     <children>
+                        <BarChart layoutY="-1.0" prefHeight="372.0" prefWidth="459.0" title="Diagramme 2">
+                          <xAxis>
+                            <CategoryAxis side="BOTTOM" />
+                          </xAxis>
+                          <yAxis>
+                            <NumberAxis side="LEFT" />
+                          </yAxis>
+                        </BarChart>
+                     </children>
+                  </AnchorPane>
+               </children>
+            </AnchorPane>
+         </children>
+      </AnchorPane>
+   </children>
+</Pane>

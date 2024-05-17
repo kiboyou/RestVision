@@ -1,0 +1,238 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.Cursor?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.StackPane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="700.0" prefWidth="1336.0" style="-fx-background-color: #f6a347;" stylesheets="@../public/css/style.css" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.rest_vision.controller.dashboard.DashboardController">
+   <children>
+      <HBox prefHeight="700.0" prefWidth="1336.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+         <children>
+            <VBox alignment="CENTER" prefHeight="671.0" prefWidth="292.0" style="-fx-background-color: #fff;" HBox.hgrow="ALWAYS">
+               <children>
+                  <ImageView fitHeight="83.0" fitWidth="117.0" pickOnBounds="true" preserveRatio="true" VBox.vgrow="ALWAYS">
+                     <VBox.margin>
+                        <Insets bottom="20.0" top="20.0" />
+                     </VBox.margin>
+                     <image>
+                        <Image url="@../public/img/utils/icon.png" />
+                     </image>
+                  </ImageView>
+                  <VBox alignment="CENTER" prefHeight="500.0" prefWidth="300.0" stylesheets="@../public/css/style.css" VBox.vgrow="ALWAYS">
+                     <children>
+                        <JFXButton alignment="CENTER" graphicTextGap="20.0" onAction="#dashboard" prefHeight="37.0" prefWidth="232.0" style="-fx-background-color: #e4e4e2;" text="Dashboard" textFill="#ac6724" VBox.vgrow="ALWAYS">
+                           <VBox.margin>
+                              <Insets bottom="5.0" />
+                           </VBox.margin>
+                           <padding>
+                              <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
+                           </padding>
+                           <graphic>
+                              <ImageView fitHeight="29.0" fitWidth="27.0" pickOnBounds="true" preserveRatio="true">
+                                 <image>
+                                    <Image url="@../public/img/utils/dashboard-1.png" />
+                                 </image>
+                              </ImageView>
+                           </graphic>
+                           <font>
+                              <Font name="Calibri" size="18.0" />
+                           </font>
+                           <cursor>
+                              <Cursor fx:constant="HAND" />
+                           </cursor>
+                        </JFXButton>
+                        <JFXButton fx:id="menu" alignment="CENTER" graphicTextGap="50.0" layoutX="10.0" layoutY="10.0" onAction="#menu" prefHeight="39.0" prefWidth="234.0" style="-fx-background-color: #e4e4e2;" text="Menus" textFill="#ac6724" VBox.vgrow="ALWAYS">
+                           <padding>
+                              <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
+                           </padding>
+                           <font>
+                              <Font name="Calibri" size="18.0" />
+                           </font>
+                           <graphic>
+                              <ImageView fitHeight="27.0" fitWidth="27.0" pickOnBounds="true" preserveRatio="true">
+                                 <image>
+                                    <Image url="@../public/img/utils/menu-1.png" />
+                                 </image>
+                                 <cursor>
+                                    <Cursor fx:constant="HAND" />
+                                 </cursor>
+                              </ImageView>
+                           </graphic>
+                           <VBox.margin>
+                              <Insets bottom="5.0" />
+                           </VBox.margin>
+                           <cursor>
+                              <Cursor fx:constant="HAND" />
+                           </cursor>
+                        </JFXButton>
+                        <JFXButton fx:id="reservation" alignment="CENTER" layoutX="10.0" layoutY="52.0" onAction="#reservation" prefHeight="40.0" prefWidth="234.0" style="-fx-background-color: #e4e4e2;" text=" Reservations" textFill="#ac6724" VBox.vgrow="ALWAYS">
+                           <padding>
+                              <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
+                           </padding>
+                           <font>
+                              <Font name="Calibri" size="18.0" />
+                           </font>
+                           <cursor>
+                              <Cursor fx:constant="HAND" />
+                           </cursor>
+                           <graphic>
+                              <ImageView fitHeight="29.0" fitWidth="27.0" pickOnBounds="true" preserveRatio="true">
+                                 <image>
+                                    <Image url="@../public/img/utils/table-restaurant.png" />
+                                 </image>
+                              </ImageView>
+                           </graphic>
+                           <VBox.margin>
+                              <Insets bottom="5.0" />
+                           </VBox.margin>
+                        </JFXButton>
+                        <JFXButton fx:id="commande" alignment="CENTER" graphicTextGap="10.0" layoutX="10.0" layoutY="94.0" onAction="#commande" prefHeight="40.0" prefWidth="235.0" style="-fx-background-color: #e4e4e2;" text="Commandes" textFill="#ac6724" VBox.vgrow="ALWAYS">
+                           <padding>
+                              <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
+                           </padding>
+                           <font>
+                              <Font name="Calibri" size="18.0" />
+                           </font>
+                           <cursor>
+                              <Cursor fx:constant="HAND" />
+                           </cursor>
+                           <graphic>
+                              <ImageView fitHeight="29.0" fitWidth="27.0" pickOnBounds="true" preserveRatio="true">
+                                 <image>
+                                    <Image url="@../public/img/utils/order.png" />
+                                 </image>
+                              </ImageView>
+                           </graphic>
+                           <VBox.margin>
+                              <Insets bottom="5.0" />
+                           </VBox.margin>
+                        </JFXButton>
+                        <JFXButton fx:id="stock" alignment="CENTER" graphicTextGap="50.0" layoutX="10.0" layoutY="136.0" onAction="#stock" prefHeight="40.0" prefWidth="237.0" style="-fx-background-color: #e4e4e2;" text="Stocks" textFill="#ac6724">
+                           <padding>
+                              <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
+                           </padding>
+                           <font>
+                              <Font name="Calibri" size="18.0" />
+                           </font>
+                           <cursor>
+                              <Cursor fx:constant="HAND" />
+                           </cursor>
+                           <graphic>
+                              <ImageView fitHeight="29.0" fitWidth="27.0" pickOnBounds="true" preserveRatio="true">
+                                 <image>
+                                    <Image url="@../public/img/utils/warehouse.png" />
+                                 </image>
+                              </ImageView>
+                           </graphic>
+                           <VBox.margin>
+                              <Insets bottom="5.0" />
+                           </VBox.margin>
+                        </JFXButton>
+                        <JFXButton fx:id="personnel" alignment="CENTER" graphicTextGap="15.0" layoutX="10.0" layoutY="181.0" onAction="#personnel" prefHeight="40.0" prefWidth="237.0" style="-fx-background-color: #e4e4e2;" text="Personnels" textFill="#ac6724">
+                           <padding>
+                              <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
+                           </padding>
+                           <font>
+                              <Font name="Calibri" size="18.0" />
+                           </font>
+                           <cursor>
+                              <Cursor fx:constant="HAND" />
+                           </cursor>
+                           <graphic>
+                              <ImageView fitHeight="29.0" fitWidth="27.0" pickOnBounds="true" preserveRatio="true">
+                                 <image>
+                                    <Image url="@../public/img/utils/chef.png" />
+                                 </image>
+                              </ImageView>
+                           </graphic>
+                           <VBox.margin>
+                              <Insets bottom="5.0" />
+                           </VBox.margin>
+                        </JFXButton>
+                        <VBox alignment="CENTER" prefHeight="315.0" prefWidth="300.0" VBox.vgrow="ALWAYS">
+                           <children>
+                              <JFXButton fx:id="logout" alignment="CENTER" graphicTextGap="15.0" onAction="#logout" prefHeight="30.0" prefWidth="180.0" style="-fx-background-color: #c95756;" text="Deconnexion" textFill="#f8eadf" VBox.vgrow="ALWAYS">
+                                 <padding>
+                                    <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
+                                 </padding>
+                                 <font>
+                                    <Font name="Calibri" size="14.0" />
+                                 </font>
+                                 <cursor>
+                                    <Cursor fx:constant="HAND" />
+                                 </cursor>
+                                 <graphic>
+                                    <ImageView fitHeight="21.0" fitWidth="23.0" pickOnBounds="true" preserveRatio="true">
+                                       <image>
+                                          <Image url="@../public/img/utils/power-off.png" />
+                                       </image>
+                                    </ImageView>
+                                 </graphic>
+                              </JFXButton>
+                           </children>
+                        </VBox>
+                     </children>
+                  </VBox>
+               </children>
+               <HBox.margin>
+                  <Insets right="1.0" top="1.0" />
+               </HBox.margin>
+               <opaqueInsets>
+                  <Insets />
+               </opaqueInsets>
+            </VBox>
+            <VBox prefHeight="200.0" prefWidth="100.0" HBox.hgrow="ALWAYS">
+               <children>
+                  <BorderPane prefHeight="50.0" prefWidth="1036.0">
+                     <top>
+                        <HBox alignment="TOP_RIGHT" prefHeight="50.0" prefWidth="1026.0" style="-fx-background-color: #fff;" BorderPane.alignment="CENTER">
+                           <children>
+                              <Label alignment="CENTER_RIGHT" prefHeight="40.0" prefWidth="105.0" text="Bienvenue," textFill="#ac6724" HBox.hgrow="ALWAYS">
+                                 <font>
+                                    <Font name="Arial" size="15.0" />
+                                 </font>
+                                 <padding>
+                                    <Insets bottom="5.0" left="5.0" top="5.0" />
+                                 </padding>
+                                 <HBox.margin>
+                                    <Insets bottom="5.0" left="5.0" top="5.0" />
+                                 </HBox.margin>
+                              </Label>
+                              <Label fx:id="user_connected" contentDisplay="CENTER" layoutX="854.0" layoutY="15.0" prefHeight="50.0" prefWidth="116.0" text="user" textFill="#ac6724" HBox.hgrow="ALWAYS">
+                                 <font>
+                                    <Font name="Arial" size="14.0" />
+                                 </font>
+                                 <HBox.margin>
+                                    <Insets bottom="5.0" right="5.0" top="5.0" />
+                                 </HBox.margin>
+                                 <padding>
+                                    <Insets bottom="5.0" left="5.0" top="5.0" />
+                                 </padding>
+                              </Label>
+                           </children>
+                           <BorderPane.margin>
+                              <Insets top="1.0" />
+                           </BorderPane.margin>
+                        </HBox>
+                     </top>
+                  </BorderPane>
+                  <AnchorPane prefHeight="200.0" prefWidth="200.0">
+                     <children>
+                        <StackPane fx:id="contentArea" prefHeight="650.0" prefWidth="1043.0" />
+                     </children>
+                  </AnchorPane>
+               </children>
+            </VBox>
+         </children>
+      </HBox>
+   </children>
+</AnchorPane>
