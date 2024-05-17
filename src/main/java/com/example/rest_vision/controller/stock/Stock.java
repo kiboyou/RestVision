@@ -259,7 +259,7 @@ public class Stock {
         if (stockSelectionne != null) {
             Alert confirmation = new Alert(Alert.AlertType.CONFIRMATION);
             confirmation.setTitle("Confirmation de suppression");
-            confirmation.setHeaderText("Voulez-vous vraiment supprimer cet employé ?");
+            confirmation.setHeaderText("Voulez-vous vraiment supprimer cet stock ?");
             confirmation.setContentText("Cette action est irréversible.");
             confirmation.showAndWait().ifPresent(response -> {
                 if (response == ButtonType.OK) {
@@ -307,7 +307,7 @@ public class Stock {
     public void Connect() {
         try {
             Class.forName("com.mysql.jdbc.Driver");
-            con = DriverManager.getConnection("jdbc:mysql://localhost/rest_vision", "root", "");
+            con = DriverManager.getConnection("jdbc:mysql://localhost/rest_vision", "root", "Ouattar@59");
         } catch (ClassNotFoundException ex) {
 
         } catch (SQLException ex) {
